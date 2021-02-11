@@ -19,15 +19,32 @@
 - [x] Within the img-div element, I should see an element with a corresponding **id="img-caption"** that contains textual content describing the image shown in img-div.
 - [x] I should see an element with a corresponding **id="tribute-info"**, which contains textual content describing the subject of the tribute page.
 - [x] I should see an a element with a corresponding **id="tribute-link"**, which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of **target** and set it to **_blank** in order for your link to open in a new tab (i.e. target="_blank").
-- [ ] The **img** element should **responsively resize**, **relative** to the **width of its parent** element, **without exceeding its original** size.
+- [x] The **img** element should **responsively resize**, **relative** to the **width of its parent** element, **without exceeding its original** size.
 - [ ] The **img** element should be **centered** within its **parent** element.
 
-### Barbara To do:
-- [ ] **PC**: Run page on Tablet (through OneDrive?)
-- [ ] **image**: **Content**: google, download, edit, save, write caption
-- [ ] **image**: **HTML**: src, alt, caption, size (responsive, not too big)
-- [ ] **image**: **HTML**: in *div* or *figure*?
-- [ ] **image**: **CSS** relative to parent element: center, resize?
-- [ ] **Timeline**: **CSS**: better bullet points
-- [ ] **Links**: **Content**: insert url, text
-- [ ] **Links**: **HTML**: what tag? p, quote?
+### Barbara Tasks:
+#### Done:
+- [x] **PC**: Run page on Tablet (through OneDrive?)
+- [x] **image**: **Content**: google, download, edit, save, write caption
+- [x] **image**: **HTML**: src, alt, caption, size (responsive, not too big)
+- [x] **image**: **HTML**: in *div* or *figure*?
+- [x] **image**: **CSS** relative to parent element: center, resize?. Did it with image display: block; and margin: 0 auto;
+- [x] **Timeline**: **Content**: paste text
+- [x] **Quote**: **Content, HTML**: paste text, correct tags
+- [x] **Links**: **Content**: insert url, text
+- [x] **Links**: **HTML**: what tag? p, quote?
+
+#### Up Next:
+- [ ] **CSS external**: put current style-section in css file.
+- [ ] **Footer**: **Content, CSS**: copyright. Google how other websites do it, write my own
+- [ ] **Timeline**: **CSS**: better bullet points. Can years have their own column?
+- [ ] **Layout**: **width**: use unit 'ch' to make 80 characters?
+- [ ] **Visual Design**: **Simple**:
+- [ ] main element good position (margins)
+- [ ] style cards for image & quote; 
+- [ ] set variables for colours
+- [ ] set placeholders for font family and size
+
+#### Future:
+- [ ] **Visual Design**: **EITHER Mockups for Layout, Style**: check my notes how to properly plan, find design ideas/recommendations, make mockups
+- [ ] **Header**: **Content, HTML, CSS**: find "my brand": name, logo, design, navigation link to other pages
