@@ -1,0 +1,195 @@
+/* GENERAL */
+/* color pallettes:
+--eggshell: #f4f1deff;
+--terra-cotta: #e07a5fff;
+--independence: #3d405bff;
+--green-sheen: #81b29aff;
+--deep-champagne: #f2cc8fff;
+--royal-blue-dark: #00296bff;
+--dark-cornflower-blue: #003f88ff;
+--usafa-blue: #00509dff;
+--mikado-yellow: #fdc500ff;
+--cyber-yellow: #ffd500ff;
+--light-cornflower-blue: #8ecae6ff;
+--blue-green: #219ebcff;
+--prussian-blue: #023047ff;
+--honey-yellow: #ffb703ff;
+--orange: #fb8500ff;
+
+--eggshell: hsla(52, 50%, 91%, 1);
+--terra-cotta: hsla(13, 68%, 63%, 1);
+--independence: hsla(234, 20%, 30%, 1);
+--green-sheen: hsla(151, 24%, 60%, 1);
+--deep-champagne: hsla(37, 79%, 75%, 1);
+--royal-blue-dark: hsla(217, 100%, 21%, 1);
+--dark-cornflower-blue: hsla(212, 100%, 27%, 1);
+--usafa-blue: hsla(209, 100%, 31%, 1);
+--mikado-yellow: hsla(47, 100%, 50%, 1);
+--cyber-yellow: hsla(50, 100%, 50%, 1);
+--light-cornflower-blue: hsla(199, 64%, 73%, 1);
+--blue-green: hsla(192, 70%, 43%, 1);
+--prussian-blue: hsla(200, 95%, 14%, 1);
+--honey-yellow: hsla(43, 100%, 51%, 1);
+--orange: hsla(32, 100%, 49%, 1);
+
+*/
+
+:root {}
+body{  
+  font-family:;
+  font-size:;
+  font-weight:;
+  line-height:;
+  color:;
+  background: #E07A5FFF;
+  margin:;  
+} 
+.container {
+  width:;
+  margin:;
+  padding:;
+  background: hsla(199, 64%, 73%, 1);
+}
+
+/* HEADER */
+header{  background: blue;} 
+.header {  
+  background: yellow;
+  margin:;
+  padding:;
+}
+h1 {  
+  background: green;
+  margin:;
+  line-height:;
+  font-size:;
+  font-weight:;
+} 
+#title{  background: orange;} 
+.headings{  
+  background: grey;
+  text-align: center;
+}
+p {
+  background: green; 
+  margin:;
+  font-size:;
+} 
+#description{
+  background: violet;
+  font-weight:;
+  font-style:;
+  text-shadow:;
+} 
+.text{color: green;}
+
+
+/* FORM */
+form {  
+  background: white;
+  padding:;
+  border-radius:;
+} 
+#survey-form{background: pink;}
+div{ background: grey;} 
+.form-group{ 
+  background: blue;
+  margin:;
+  padding:;
+}
+label { 
+  background: lightgreen;
+  display:;
+  align-items:;
+  font-size:;
+  margin:;
+} 
+
+/* NAME */
+#name-label{color: brown;}
+input{background: silver;}
+input, button, select, textarea {
+  margin:;
+  font-family:;
+  font-size:;
+  line-height:;
+}
+text{}
+/* name="name" */
+#name{color: blue;}
+.form-control{
+  display:;
+  width:;
+  height:;
+  padding:;
+  border:;
+  border-radius:;
+  background-color;
+  color:purple;
+}
+/* placeholder */
+
+/* EMAIL */
+#email-label{}
+email{}
+/* name="email" */
+#email{}
+
+/* NUMBER */
+#number-label{}
+number{}
+/* name="number" */
+#number{}
+
+/* DROP-DOWN MENU */
+select{background:yellow;}
+#dropdown{background: red;}
+/* name="dropname" */
+option{background: orange;}
+
+/* RADIO GROUP */
+/* name="question-1" Radio group */
+/* value="yes" */
+radio{background: violet;}
+.input-radio, .input-checkbox {
+  background:yellow;
+  display:;
+  margin:;
+  min-height:;
+  min-width:;
+}
+/* value="no" */
+/* value="maybe" */
+
+/* CHECK-BOXES */
+/* name="enjoy" */
+/* value="a" */
+checkbox{background: violet;}
+/* value="b" */
+
+/* COMMENT */
+textarea{color: red;}
+#comments{background: grey;}
+.input-textarea{
+  min-height:;
+  width:;
+  padding:;
+  resize:;
+  font-family:Arial;
+}
+/* name="comment" */
+
+/* SUBMIT */
+button{background:orange; border:;}
+submit{color: purple;}
+#submit{font-size:3rem;}
+.submit-button{
+  display:;
+  width:;
+  padding:;
+  border-radius:;
+  background:;
+  color:;
+  font-weight:700;
+  cursor:;
+}

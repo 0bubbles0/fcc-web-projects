@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <!--HEADER-->
+    <header class="header">
+      <h1 id="title" class="headings">Title</h1>
+      <p id="description" class="text">Introduction</p>
+    </header>
+
+    <!--FORM-->
+    <form id="survey-form">
+
+      <!--NAME-->
+      <div class="form-group">
+        <label id="name-label" for="name">Name:
+        </label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <!--EMAIL-->
+      <div class="form-group">
+        <label id="email-label" for="email">Email:
+        </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <!--NUMBER-->
+      <div class="form-group">
+        <label id="number-label" for="number">Number:
+          <span class="clue">(optional)</span>
+        </label>
+        <input type="number" name="number" id="number" min="5" max="9" class="form-control"
+          placeholder="Enter your number">
+      </div>
+
+      <!--DROP-DOWN-->
+      <div class="form-group">
+        <p>Select one:</p>
+        <select id="dropdown" name="dropdown" class="form-control" required>
+          <option disabled selected value>Select one of these</option>
+          <option value="a">Select A</option>
+          <option value="b">Select B</option>
+        </select>
+      </div>
+
+      <!-- RADIO BUTTONS-->
+      <div class="form-group">
+        <p>Choose one radio:</p>
+        <label> <input name="question-1" value="yes" type="radio" class="input-radio" checked>Yes
+        </label>
+        <label> <input name="question-1" value="no" type="radio" class="input-radio">No
+        </label>
+        <label> <input name="question-1" value="maybe" type="radio" class="input-radio">Maybe
+        </label>
+      </div>
+
+      <!--CHECK BOXES-->
+      <div class="form-group">
+        <p>Tick all boxes that fit:</p>
+        <label> <input name="enjoy" value="a" type="checkbox" class="input-checkbox">A
+        </label>
+        <label> <input name="enjoy" value="b" type="checkbox" class="input-checkbox">B
+        </label>
+
+      </div>
+
+      <!--TEXTAREA COMMENTS-->
+      <div class="form-group">
+        <p>Please leave any comments or suggestions below:</p>
+        <textarea id="comments" class="input-textarea" name="comment">Enter your comment here
+        </textarea>
+
+      </div>
+
+      <!--SUBMIT BUTTON-->
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit
+        </button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
