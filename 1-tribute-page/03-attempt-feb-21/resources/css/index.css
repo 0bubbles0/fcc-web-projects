@@ -10,20 +10,25 @@ body {
   font-family:;
   font-weight:;
   line-height:;*/
-
+  font-family: sans-serif;
   /*COLOR
   color: var(--font-color, blue);
   background-color: var(--bground-color, darkkhaki);*/
 }
 
+/*POSITION*/
 main {
-  /*POSITION, ALIGN, RESPONSIVE*/
+  /*POSITION, ALIGN children, RESPONSIVE*/
+  margin: 5vh auto; /*vertical head-foot, horizontally center */
+  max-width: 80ch; /* ch=characters*/
+  /*padding-bottom: 2vh;*/
 }
 
 figure {
- /* background-color:darkcyan;*/
-  /*text-align: center;*/
-  max-width: 80ch;
+  /*max-width: 80ch;*/
+  box-sizing: border-box; /*match width of other elements*/
+  width: 100%; /*to equal parent*/
+  margin: auto;
 }
 
 #image {
@@ -34,6 +39,25 @@ figure {
   height: auto;
   /*align: center;*/
 }
+/*ZEILENABSTAND*/
+body{line-height: 1.4em;}
+li {margin-bottom: 1vh;}
+
+/*DECORATION*/
+/*main > * {border: 2px dotted blue;}*/
+h1 {text-transform: uppercase;}
+h3 {text-decoration: underline;}
+h1, h2 { text-align: center; }
+ul, p, figcaption { text-align: justify;}
+
+/*QUOTE*/
+blockquote{
+  text-align: center;
+  line-height: 2em;
+}
+
+/*CARD DECORATION*/
+
 /*dl {
   display:block;
 }

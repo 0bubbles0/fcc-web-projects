@@ -20,7 +20,7 @@
 - [x] I should see an element with a corresponding **id="tribute-info"**, which contains textual content describing the subject of the tribute page.
 - [x] I should see an a element with a corresponding **id="tribute-link"**, which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of **target** and set it to **_blank** in order for your link to open in a new tab (i.e. target="_blank").
 - [x] The **img** element should **responsively resize**, **relative** to the **width of its parent** element, **without exceeding its original** size.
-- [ ] The **img** element should be **centered** within its **parent** element.
+- [x] The **img** element should be **centered** within its **parent** element.
 
 ### Barbara Tasks:
 #### Done:
@@ -34,17 +34,25 @@
 - [x] **Links**: **Content**: insert url, text
 - [x] **Links**: **HTML**: what tag? p, quote?
 - [x] **CSS external**: put current style-section in css file.
+- [x] set **variables** for colours in :root
+- [x] set placeholders for **font** family and size in body
+- [x] **Layout**: **width**: use unit 'ch' to make 80 characters?
+- [x] **figure**: same width as main? with border-box
+
+#### Google again:
+- [x] **main** element good **position** (margins)
+- [x] **Layout**: spacing between elements & line-height
 
 #### Up Next:
-- [ ] set placeholders for **font** family and size: where? in *, :root, body or html?
-- [ ] set **variables** for colours
-- [ ] **main** element good **position** (margins)
-- [ ] **Layout**: **width**: use unit 'ch' to make 80 characters?
+- [ ] **fix**: justify figcaption
 - [ ] style cards for image & quote; 
-
+- [ ] **link list** (Zeilenabstand, style vertically with a class?)
+- [ ] **fix**:vertical spacing in general
+- [ ] **Visuals**: **font-size**: What is good font-family, font-size, Zeilen/Paragraphen-abstand? Find my notes on units
 
 #### Future:
 - [ ] **Timeline**: **CSS**: better bullet points. Can years have their own column? Perhaps dt list type?
+- [ ] **CSS**: factorise properly. Is it better to repeat a selector or a property?
 - [ ] **Footer**: **Content, CSS**: copyright. Google how other websites do it, write my own
 - [ ] **Visual Design Pro**: **Mockups for Layout, Style**: check my notes how to properly plan, find design ideas/recommendations, make mockups
 - [ ] **Header**: **Content, HTML, CSS**: find "my brand": name, logo, design, navigation link to other pages
