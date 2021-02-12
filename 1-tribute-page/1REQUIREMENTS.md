@@ -33,18 +33,18 @@
 - [x] **Quote**: **Content, HTML**: paste text, correct tags
 - [x] **Links**: **Content**: insert url, text
 - [x] **Links**: **HTML**: what tag? p, quote?
+- [x] **CSS external**: put current style-section in css file.
 
 #### Up Next:
-- [ ] **CSS external**: put current style-section in css file.
-- [ ] **Footer**: **Content, CSS**: copyright. Google how other websites do it, write my own
-- [ ] **Timeline**: **CSS**: better bullet points. Can years have their own column?
+- [ ] set placeholders for **font** family and size: where? in *, :root, body or html?
+- [ ] set **variables** for colours
+- [ ] **main** element good **position** (margins)
 - [ ] **Layout**: **width**: use unit 'ch' to make 80 characters?
-- [ ] **Visual Design**: **Simple**:
-- [ ] main element good position (margins)
 - [ ] style cards for image & quote; 
-- [ ] set variables for colours
-- [ ] set placeholders for font family and size
+
 
 #### Future:
-- [ ] **Visual Design**: **EITHER Mockups for Layout, Style**: check my notes how to properly plan, find design ideas/recommendations, make mockups
+- [ ] **Timeline**: **CSS**: better bullet points. Can years have their own column? Perhaps dt list type?
+- [ ] **Footer**: **Content, CSS**: copyright. Google how other websites do it, write my own
+- [ ] **Visual Design Pro**: **Mockups for Layout, Style**: check my notes how to properly plan, find design ideas/recommendations, make mockups
 - [ ] **Header**: **Content, HTML, CSS**: find "my brand": name, logo, design, navigation link to other pages
