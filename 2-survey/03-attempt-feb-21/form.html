@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--also select country? "en-US"-->
+
+<head>
+  <!--Character set, title-->
+  <meta charset="UTF-8">
+  <title>HTML example</title>
+
+  <!--META-->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="revised" content="">
+  <!--Auto-refresh: <meta http-equiv="refresh" content="60"> -->
+
+  <!--BASE URL that all relative URLs refer to: <base href="" target="_blank"> -->
+
+  <!--EXTERNAL RESOURCES-->
+  <link href="resources/css/form.css" type="text/css" rel="stylesheet">
+  <!--JavaScript: <script src="myscript.js"-->
+
+  <!--INTERNAL-->
+  <style></style>
+  <script></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header>
+    <!--logo, banner-->
+    <h1 id="title">Sign up to our Newsletters</h1>
+    <p id="description">Be the first to receive updates and enjoy exclusive offers from us!</p>
+    <!--<nav>Table of Contents:
+      <ul>
+        <li><a href="#C1">Chapter 1</a></li>
+        <li><a href="html-template-basics.html#C2">Recipes</a></li>
+      </ul>
+    </nav> -->
+  </header>
+
+  <!--MAIN-->
+  <main>
+    <form id="survey-form">
+      <p>Contact preferences:</p>
+      <!--NAME-->
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="" value="" placeholder="Full Name" required>
+      <br>
+      <!--EMAIL. validate-->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="" value="" placeholder="Email Address" required>
+      <br>
+      <!--NUMBER. validate-->
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="" value="" placeholder="18+" min="18" max="130">
+      <br>
+
+      <!--DROPDOWN-->
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="referral" size="1">
+        <option>Please select ...</option>
+        <option value="socialmedia">Social media</option>
+        <option value="advertisement">Advertisement</option>
+        <option value="recommendation">Personal Recommendation</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+
+      <!--CHECKBOXES-->
+      <fieldset>
+        <legend>Which Newsletters would you like to subscribe to?</legend>
+        <input type="checkbox" id="" name="" value="">
+        <label for="">General updates and announcements</label>
+        <input type="checkbox" id="" name="" value="">
+        <label for="">New in Store</label>
+        <input type="checkbox" id="" name="" value="">
+        <label for="">Promotional Offers</label>
+        <input type="checkbox" id="" name="" value="">
+        <label for="">Exclusive Member Discounts</label>
+      </fieldset>
+      <br>
+
+      <!--RADIO-->
+      <fieldset>
+        <legend>How often would you like to receive updates?</legend>
+        <input type="radio" id="" name="" value="" checked>
+        <label for="">Daily</label>
+        <input type="radio" id="" name="" value="">
+        <label for="">Weekly</label>
+        <input type="radio" id="" name="" value="">
+        <label for="">Biweekly</label>
+        <input type="radio" id="" name="" value="">
+        <label for="">Monthly</label>
+      </fieldset>
+      <br>
+
+      <!--COMMENTS-->
+      <label for="comments">We value feedback from our Customers!</label>
+      <br>
+      <textarea id="comments" name="message" rows="10" cols="30" placeholder="Comments and suggestions..."></textarea>
+      <br>
+
+      <!--T&Cs-->
+      <input type="checkbox" id="" name="" value="" required>
+      <label for="">Please confirm that you have read our T&Cs and Privacy Policy.*</label>
+      <br>
+
+      <!--SUBMIT-->
+      <input type="submit">
+
+    </form>
+    <!--<section>
+      <h3 id="C1">h2-h6 with default formats also for screenreaders, search engines</h2>
+        <p>Paragraph</p>
+    </section>-->
+
+  </main>
+
+  <!--FOOTER-->
+  <footer>
+    <hr>
+    <!--<details>
+      <summary>Heading connected to details element</summary>
+      <p>View or hide additional details</p>
+    </details>
+    <p>Footnotes, further reading, copyright information, sitemap, back-to-top. Multiple footers possible</p>-->
+    <p>(c) 2020-2021 0bubbles0</p>
+  </footer>
+
+</body>
+
+</html>

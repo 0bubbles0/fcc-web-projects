@@ -1,0 +1,29 @@
+/*html is the root here, but :root as a class has higher specificity*/
+:root{ 
+  --bground-color:;
+  --font-color:;
+}
+
+html {
+  font-size: 100%; /*or 62.5%? From now on use rem unit*/
+}
+
+/*Set global layout, spacing, color, font*/
+body{
+  margin:;
+
+  background:;
+  background-color: ; /*or set in html*/
+
+  font:;
+}
+
+main{}
+
+img {
+  /*this display and margin centers it in parent*/
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
