@@ -16,9 +16,21 @@ body{
   background-color: ; /*or set in html*/
 
   font:;
+  font-size: 1rem;
 }
 
 main{}
+
+/*LAYOUT*/
+header, main {
+  width: 100%; 
+  max-width: 720px;
+  margin: 0 auto;
+  background-color:khaki;
+}
+.container {
+  padding: 6rem ;
+}
 
 img {
   /*this display and margin centers it in parent*/

@@ -5,7 +5,7 @@
 <head>
   <!--Character set, title-->
   <meta charset="UTF-8">
-  <title>HTML example</title>
+  <title>Form</title>
 
   <!--META-->
   <meta name="description" content="">
@@ -42,80 +42,98 @@
 
   <!--MAIN-->
   <main>
-    <form id="survey-form">
-      <p>Contact preferences:</p>
-      <!--NAME-->
-      <label id="name-label" for="name">Name:</label>
-      <input type="text" id="name" name="" value="" placeholder="Full Name" required>
-      <br>
-      <!--EMAIL. validate-->
-      <label id="email-label" for="email">Email:</label>
-      <input type="email" id="email" name="" value="" placeholder="Email Address" required>
-      <br>
-      <!--NUMBER. validate-->
-      <label id="number-label" for="number">Age:</label>
-      <input type="number" id="number" name="" value="" placeholder="18+" min="18" max="130">
-      <br>
+    <div class="container">
+      <form id="survey-form" name="Newsletters" autocomplete="on" target="_parent">
+        <!--  <p>Contact preferences:</p> -->
+        <!--NAME-->
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Full Name" autofocus required>
+        <br>
+        <!--EMAIL. validate-->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <br>
+        <!--NUMBER. validate-->
+        <label for="phone">Mobile <span class="optional">(Optional)</span>:</label>
+        <input id="phone" type="tel" name="phone" pattern="">
+        <br>
 
-      <!--DROPDOWN-->
-      <label for="dropdown">How did you hear about us?</label>
-      <select id="dropdown" name="referral" size="1">
-        <option>Please select ...</option>
-        <option value="socialmedia">Social media</option>
-        <option value="advertisement">Advertisement</option>
-        <option value="recommendation">Personal Recommendation</option>
-        <option value="other">Other</option>
-      </select>
-      <br>
+        <label id="number-label" for="number">Age <span class="optional">(Optional)</span>:</label>
+        <input type="number" id="number" name="age" placeholder="16+" min="16" max="130">
+        <br>
 
-      <!--CHECKBOXES-->
-      <fieldset>
-        <legend>Which Newsletters would you like to subscribe to?</legend>
-        <input type="checkbox" id="" name="" value="">
-        <label for="">General updates and announcements</label>
-        <input type="checkbox" id="" name="" value="">
-        <label for="">New in Store</label>
-        <input type="checkbox" id="" name="" value="">
-        <label for="">Promotional Offers</label>
-        <input type="checkbox" id="" name="" value="">
-        <label for="">Exclusive Member Discounts</label>
-      </fieldset>
-      <br>
+        <!--DROPDOWN-->
+        <label for="referral">How did you hear about us? <span class="optional">(Optional)</span></label>
+        <br>
+        <select id="referral" name="referral" size="1">
+          <option disabled selected value="0">Please select ...</option>
+          <option value="socialmedia">Social media</option>
+          <option value="advertisement">Advertisement</option>
+          <option value="recommendation">Personal Recommendation</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
 
-      <!--RADIO-->
-      <fieldset>
-        <legend>How often would you like to receive updates?</legend>
-        <input type="radio" id="" name="" value="" checked>
-        <label for="">Daily</label>
-        <input type="radio" id="" name="" value="">
-        <label for="">Weekly</label>
-        <input type="radio" id="" name="" value="">
-        <label for="">Biweekly</label>
-        <input type="radio" id="" name="" value="">
-        <label for="">Monthly</label>
-      </fieldset>
-      <br>
+        <!--CHECKBOXES-->
+        <fieldset>
+          <legend>Which Newsletters would you like to subscribe to?</legend>
+          <input id="sub-general" type="checkbox" name="subscriptions" value="general" checked>
+          <label for="sub-general">General Updates and Announcements</label>
+          <input id="sub-new" type="checkbox" name="subscriptions" value="new">
+          <label for="sub-new">New in Store</label>
+          <input id="sub-promos" type="checkbox" id="" name="subscriptions" value="promos">
+          <label for="sub-promos">Promotional Offers</label>
+          <input id="sub-members" type="checkbox" id="" name="subscriptions" value="members">
+          <label for="sub-members">Exclusive Member Discounts</label>
+        </fieldset>
+        <br>
 
-      <!--COMMENTS-->
-      <label for="comments">We value feedback from our Customers!</label>
-      <br>
-      <textarea id="comments" name="message" rows="10" cols="30" placeholder="Comments and suggestions..."></textarea>
-      <br>
+        <!--CHECKBOXES-->
+        <fieldset>
+          <legend>How may we contact you?</legend>
+          <input id="allow-email" type="checkbox" name="allow" value="email" checked>
+          <label for="allow-email">Email</label>
+          <input id="allow-phone" type="checkbox" name="allow" value="phone">
+          <label for="allow-phone">SMS</label>
+        </fieldset>
+        <br>
 
-      <!--T&Cs-->
-      <input type="checkbox" id="" name="" value="" required>
-      <label for="">Please confirm that you have read our T&Cs and Privacy Policy.*</label>
-      <br>
+        <!--RADIO-->
+        <fieldset>
+          <legend>How often would you like to receive updates?</legend>
+          <input id="freq-daily" type="radio" name="frequency" value="daily" checked>
+          <label for="freq-daily">Daily</label>
+          <input id="freq-weekly" type="radio" name="frequency" value="weekly">
+          <label for="freq-weekly">Weekly</label>
+          <input id="freq-biweekly" type="radio" name="frequency" value="biweekly">
+          <label for="freq-biweekly">Biweekly</label>
+          <input id="freq-monthly" type="radio" name="frequency" value="monthly">
+          <label for="freq-monthly">Monthly</label>
+        </fieldset>
+        <br>
 
-      <!--SUBMIT-->
-      <input type="submit">
+        <!--COMMENTS-->
+        <label for="comments">We value feedback from our Customers! <span class="optional">(Max 2000
+            characters)</span></label>
+        <br>
+        <textarea id="comments" name="message" rows="10" cols="30" maxlength="2000"
+          placeholder="Comments and suggestions..."></textarea>
+        <br>
 
-    </form>
-    <!--<section>
+        <!--T&Cs-->
+        <input id="t-c" type="checkbox" name="" value="" required>
+        <label for="t-c">Please confirm that you have read our T&Cs and Privacy Policy.*</label>
+        <br>
+
+        <!--SUBMIT-->
+        <input type="submit" id="submit" value="Subscribe">
+
+      </form>
+      <!--<section>
       <h3 id="C1">h2-h6 with default formats also for screenreaders, search engines</h2>
         <p>Paragraph</p>
     </section>-->
-
+    </div>
   </main>
 
   <!--FOOTER-->
