@@ -2,13 +2,15 @@
 
 /*html is the root here, but :root as a class has higher specificity*/
 :root{ 
- /* --font-color:#2c3531; */
- --font-color: black;
+/*--font-color:#2c3531; */
+  --font-color: black;
   --bground-color:#ffcb9a;
-  --canvas-color:#d9b08c;
-  --pale-color:#d1e8e2;
+/*--canvas-color:#d9b08c;*/
   --canvas-color: #d1e8e2;
   --accent-color:#116466;
+  --hint-color: rgb(10, 41, 41);
+  --input-color:rgb(186, 70, 221);
+/*--pale-color:#d1e8e2;*/ 
   --pale-color:#d1e8e2;
   --color-1:;
 }
@@ -23,17 +25,25 @@ html {
   font-size: 100%; /*or 62.5%? From now on use rem unit*/
 }
 
-/*Set global layout, spacing, color, font*/
+/*DESIGN: COLORS*/
 body{
   margin:;
   background:;
   background-color: var(--canvas-color); /*or set in html*/  
 }
-
+.full-container {
+  background-color: var(--bground-color); 
+  color: var(--font-color);}
 h1 {color: var(--accent-color);}
-.button {background-color: var(--accent-color); color: var(--pale-color);}
-.full-container {background-color: var(--bground-color);}
-p, label {color:var(--font-color);}
+.button {
+  background-color: var(--accent-color); 
+  color: var(--pale-color);}
+.optional:after, .hint, ::placeholder  {
+  color:var(--hint-color);
+  font-weight: 100;
+}  
+input, select, textarea {color:var(--input-color);}
+
 
 /*LAYOUT: Vertical*/
 .full-container {
@@ -63,7 +73,7 @@ p, label {color:var(--font-color);}
   padding: 0.4rem;
 }
 
-/*Decoration: font, size, color*/
+/*Decoration: Special effects*/
 .required:after {
   color: red;
   font-size:;
@@ -71,20 +81,17 @@ p, label {color:var(--font-color);}
 }
 
 .optional:after {
-  color: grey;
+ /* color: grey; */
   font-size:;
   content:" (optional)";
 }
 
 .hint { 
-  color: grey; 
+/*  color: grey; */
   /*font-size:;*/
 }
 
-select,
-input[type=checkbox],
-input[type=radio],
-input[type=submit] {
+select, input[type=checkbox], input[type=radio], input[type=submit] {
   cursor: pointer;
 }
 

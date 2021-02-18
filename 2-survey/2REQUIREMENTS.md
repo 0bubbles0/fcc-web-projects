@@ -28,5 +28,16 @@
 - [x] Inside the form element, I am presented with a **textarea** at the end for additional comments.
 - [x] Inside the form element, I am presented with a button with **id="submit"** to submit all my inputs.
 
+### Done
+- [ ] 
+
 ## Questions
-- [ ] put each question in a (div class="form-group") and give input class="form-control"?
+- [ ] format "Please select..."
+- [ ] **FONT**: sizes, weights, h1-Schreibschrift
+- [ ] **LAYOUT**: flexbox or grid? Design mobile properly
+- [ ] **COLOR**: find good palette
+- [ ] **CODE**: Refactorise, clean up
+- [ ] **CONTENT**: UK mobile phone format
+- [ ] **FEATURE**: error messages, submit message
+- [ ] 
+- [ ] 
