@@ -1,43 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /*html is the root here, but :root as a class has higher specificity*/
 :root{ 
-  --font-color:; 
-  --bground-color:;
-  --canvas-color:;
-  --accent-color:;
-  --pale-color:;
+ /* --font-color:#2c3531; */
+ --font-color: black;
+  --bground-color:#ffcb9a;
+  --canvas-color:#d9b08c;
+  --pale-color:#d1e8e2;
+  --canvas-color: #d1e8e2;
+  --accent-color:#116466;
+  --pale-color:#d1e8e2;
   --color-1:;
 }
 
 * {
+  font-family: "Lato", Helvetica, Arial, sans-serif;  
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 html {
-  font-size: 100%; /*or 62.5%? From now on use rem unit*/  
+  font-size: 100%; /*or 62.5%? From now on use rem unit*/
 }
 
 /*Set global layout, spacing, color, font*/
 body{
   margin:;
-
   background:;
-  background-color: ; /*or set in html*/
-
-  font:;
-  font-size: 1rem;
+  background-color: var(--canvas-color); /*or set in html*/  
 }
 
-main{}
-
-
-img {
-  /*this display and margin centers it in parent*/
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
+h1 {color: var(--accent-color);}
+.button {background-color: var(--accent-color); color: var(--pale-color);}
+.full-container {background-color: var(--bground-color);}
+p, label {color:var(--font-color);}
 
 /*LAYOUT: Vertical*/
 .full-container {
@@ -67,11 +63,49 @@ img {
   padding: 0.4rem;
 }
 
-/*Decoration: mouse-over, span optional, span required, button, full-container as card, corners*/
-[type="submit"] {
-  width: 12ch;
+/*Decoration: font, size, color*/
+.required:after {
+  color: red;
+  font-size:;
+  content: " *";
 }
 
-.optional {}
+.optional:after {
+  color: grey;
+  font-size:;
+  content:" (optional)";
+}
 
-.required {}
+.hint { 
+  color: grey; 
+  /*font-size:;*/
+}
+
+select,
+input[type=checkbox],
+input[type=radio],
+input[type=submit] {
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+  /*width: 12ch;*/
+  margin: auto;
+  padding: 1rem 2rem;
+  border: none;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.2);
+/*  background-color:;
+  font:;  */
+}
+.button:hover {
+ /* background-color: ; 
+  opacity:; lighter*/ 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.full-container {
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);
+ /* background-color:;*/
+}

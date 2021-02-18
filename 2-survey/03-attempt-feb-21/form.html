@@ -46,30 +46,30 @@
       <!--  <p>Contact preferences:</p> -->
       <!--NAME-->
       <section class="section">
-        <label id="name-label" for="name">Name:</label>
-        <input id="name" type="text" class="block-items" name="name" placeholder="Full Name" autofocus required>
+        <label id="name-label" for="name" class="required">Name:</label>
+        <input id="name" type="text" class="block-items" name="name" placeholder="Full Name" required>
       </section>
 
       <!--EMAIL. validate-->
       <section class="section">
-        <label id="email-label" for="email">Email:</label>
+        <label id="email-label" for="email" class="required">Email:</label>
         <input type="email" id="email" class="block-items" name="email" placeholder="Email Address" required>
       </section>
 
       <!--NUMBER. validate-->
       <section class="section">
-        <label for="phone">Mobile <span class="optional">(Optional)</span>:</label>
+        <label for="phone" class="optional">Mobile:</label>
         <input id="phone" type="tel" class="block-items" name="phone" pattern="">
       </section>
 
       <section class="section">
-        <label id="number-label" for="number">Age <span class="optional">(Optional)</span>:</label>
+        <label id="number-label" for="number" class="optional">Age:</label>
         <input type="number" id="number" class="block-items" name="age" placeholder="16+" min="16" max="130">
       </section>
 
       <!--DROPDOWN-->
       <section class="section">
-        <label for="referral">How did you hear about us? <span class="optional">(Optional)</span></label>
+        <label for="referral" class="optional">How did you hear about us?</label>
         <br>
         <select id="referral" class="block-items" name="referral" size="1">
           <option disabled selected value="0">Please select ...</option>
@@ -83,7 +83,7 @@
 
       <!--CHECKBOXES-->
       <fieldset class="section">
-        <legend>Which Newsletters would you like to subscribe to?</legend>
+        <legend class="required">Which Newsletters would you like to subscribe to?</legend>
 
         <label class="block-items"><input id="sub-general" type="checkbox" name="subscriptions" value="general"
             checked>General Updates and Announcements</label>
@@ -104,7 +104,7 @@
 
       <!--CHECKBOXES-->
       <fieldset class="section">
-        <legend>How may we contact you?</legend>
+        <legend class="required">How may we contact you?</legend>
         <input id="allow-email" type="checkbox" name="allow" value="email" checked>
         <label for="allow-email">Email</label>
         <input id="allow-phone" type="checkbox" name="allow" value="phone">
@@ -114,7 +114,7 @@
 
       <!--RADIO-->
       <fieldset class="section">
-        <legend>How often would you like to receive updates?</legend>
+        <legend class="required">How often would you like to receive updates?</legend>
         <input id="freq-daily" type="radio" name="frequency" value="daily" checked>
         <label for="freq-daily">Daily</label>
         <input id="freq-weekly" type="radio" name="frequency" value="weekly">
@@ -128,7 +128,7 @@
 
       <!--COMMENTS-->
       <section class="section">
-        <label for="comments">We value feedback from our Customers! <br><span class="optional">(Max 2000
+        <label for="comments">We value feedback from our Customers! <br><span class="hint">(Max 2000
             characters)</span></label>
         <br>
         <textarea id="comments" class="block-items" name="message" rows="10" cols="30" maxlength="2000"
@@ -138,12 +138,12 @@
       <!--T&Cs-->
       <section class="section">
         <input id="t-c" type="checkbox" name="" value="" required>
-        <label for="t-c">Please confirm that you have read our T&Cs and Privacy Policy.*</label>
+        <label for="t-c" class="required">I accept the T&Cs and Privacy Policy.</label>
       </section>
 
       <!--SUBMIT-->
       <section class="section">
-        <input type="submit" id="submit" class="block-items" value="Subscribe">
+        <input type="submit" id="submit" class="button" value="Subscribe">
       </section>
 
     </form>
