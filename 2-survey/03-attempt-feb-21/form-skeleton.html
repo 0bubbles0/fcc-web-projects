@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--also select country? "en-US"-->
+
+<head>
+  <!--Character set, title-->
+  <meta charset="UTF-8">
+  <title>Form</title>
+
+  <!--META-->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="revised" content="">
+  <!--Auto-refresh: <meta http-equiv="refresh" content="60"> -->
+
+  <!--BASE URL that all relative URLs refer to: <base href="" target="_blank"> -->
+
+  <!--EXTERNAL RESOURCES-->
+  <link href="resources/css/form.css" type="text/css" rel="stylesheet">
+  <!--JavaScript: <script src="myscript.js"-->
+
+  <!--INTERNAL-->
+  <style></style>
+  <script></script>
+</head>
+
+<body>
+  <div class="full-container">
+    <header>
+      <h1 id="title">Sign up to our Newsletters</h1>
+      <p id="description">Be the first to receive updates and enjoy exclusive offers from us!</p>
+    </header>
+
+    <form id="survey-form" class="form-container">
+      <!--NAME-->
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" class="block-items" name="name" placeholder="Full Name" autofocus required>
+      <br>
+      <!--EMAIL. validate-->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" class="block-items" name="email" placeholder="Email Address" required>
+      <br>
+      <!--NUMBER. validate-->
+      <label for="phone">Mobile <span class="optional">(Optional)</span>:</label>
+      <input id="phone" type="tel" class="block-items" name="phone" pattern="">
+      <br>
+
+      <label id="number-label" for="number">Age <span class="optional">(Optional)</span>:</label>
+      <input type="number" id="number" class="block-items" name="age" placeholder="16+" min="16" max="130">
+      <br>
+
+      <!--DROPDOWN-->
+      <label for="referral">How did you hear about us? <span class="optional">(Optional)</span></label>
+      <br>
+      <select id="referral" class="block-items" name="referral" size="1">
+        <option disabled selected value="0">Please select ...</option>
+        <option value="socialmedia">Social media</option>
+        <option value="advertisement">Advertisement</option>
+        <option value="recommendation">Personal Recommendation</option>
+        <option value="other">Other</option>
+      </select>
+      <!-- <br> -->
+
+      <!--CHECKBOXES-->
+      <fieldset class="block-items">
+        <legend>Which Newsletters would you like to subscribe to?</legend>
+
+        <label class="block-items"><input id="sub-general" type="checkbox" name="subscriptions" value="general"
+            checked>General Updates and Announcements</label>
+
+        <label class="block-items"><input id="sub-new" type="checkbox" name="subscriptions" value="new">New in
+          Store</label>
+
+        <label class="block-items"><input id="sub-promos" type="checkbox" name="subscriptions"
+            value="promos">Promotional
+          Offers</label>
+
+        <label class="block-items"><input id="sub-members" type="checkbox" name="subscriptions"
+            value="members">Exclusive Member
+          Discounts</label>
+
+      </fieldset>
+      <!-- <br> -->
+
+      <!--CHECKBOXES-->
+      <fieldset class="block-items">
+        <legend>How may we contact you?</legend>
+        <input id="allow-email" type="checkbox" name="allow" value="email" checked>
+        <label for="allow-email">Email</label>
+        <input id="allow-phone" type="checkbox" name="allow" value="phone">
+        <label for="allow-phone">SMS</label>
+      </fieldset>
+      <!-- <br> -->
+
+      <!--RADIO-->
+      <fieldset class="block-items">
+        <legend>How often would you like to receive updates?</legend>
+        <input id="freq-daily" type="radio" name="frequency" value="daily" checked>
+        <label for="freq-daily">Daily</label>
+        <input id="freq-weekly" type="radio" name="frequency" value="weekly">
+        <label for="freq-weekly">Weekly</label>
+        <input id="freq-biweekly" type="radio" name="frequency" value="biweekly">
+        <label for="freq-biweekly">Biweekly</label>
+        <input id="freq-monthly" type="radio" name="frequency" value="monthly">
+        <label for="freq-monthly">Monthly</label>
+      </fieldset>
+      <!-- <br> -->
+
+      <!--COMMENTS-->
+      <div class="new-question">
+        <label for="comments">We value feedback from our Customers! <br><span class="optional">(Max 2000
+            characters)</span>
+          <br>
+          <textarea id="comments" class="block-items" name="message" rows="10" cols="30" maxlength="2000"
+            placeholder="Comments and suggestions..."></textarea>
+        </label>
+      </div>
+      <br>
+
+      <!--T&Cs-->
+      <input id="t-c" type="checkbox" name="" value="" required>
+      <label for="t-c">Please confirm that you have read our T&Cs and Privacy Policy.*</label>
+      <br>
+
+      <!--SUBMIT-->
+      <input type="submit" id="submit" class="block-items" value="Subscribe">
+
+    </form>
+  </div>
+
+</body>

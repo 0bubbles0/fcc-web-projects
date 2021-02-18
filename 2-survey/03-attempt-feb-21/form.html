@@ -28,113 +28,130 @@
 
 <body>
   <!--HEADER-->
-  <header>
-    <!--logo, banner-->
-    <h1 id="title">Sign up to our Newsletters</h1>
-    <p id="description">Be the first to receive updates and enjoy exclusive offers from us!</p>
-    <!--<nav>Table of Contents:
+  <div class="full-container">
+    <header>
+      <!--logo, banner-->
+      <h1 id="title">Sign up to our Newsletters</h1>
+      <p id="description">Be the first to receive updates and enjoy exclusive offers from us!</p>
+      <!--<nav>Table of Contents:
       <ul>
         <li><a href="#C1">Chapter 1</a></li>
         <li><a href="html-template-basics.html#C2">Recipes</a></li>
       </ul>
     </nav> -->
-  </header>
+    </header>
 
-  <!--MAIN-->
-  <main>
-    <div class="container">
-      <form id="survey-form" name="Newsletters" autocomplete="on" target="_parent">
-        <!--  <p>Contact preferences:</p> -->
-        <!--NAME-->
+    <!--MAIN-->
+    <form id="survey-form" class="form-container" name="sub-newsletters" autocomplete="on" target="_parent">
+      <!--  <p>Contact preferences:</p> -->
+      <!--NAME-->
+      <section class="section">
         <label id="name-label" for="name">Name:</label>
-        <input id="name" type="text" name="name" placeholder="Full Name" autofocus required>
-        <br>
-        <!--EMAIL. validate-->
+        <input id="name" type="text" class="block-items" name="name" placeholder="Full Name" autofocus required>
+      </section>
+
+      <!--EMAIL. validate-->
+      <section class="section">
         <label id="email-label" for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email Address" required>
-        <br>
-        <!--NUMBER. validate-->
+        <input type="email" id="email" class="block-items" name="email" placeholder="Email Address" required>
+      </section>
+
+      <!--NUMBER. validate-->
+      <section class="section">
         <label for="phone">Mobile <span class="optional">(Optional)</span>:</label>
-        <input id="phone" type="tel" name="phone" pattern="">
-        <br>
+        <input id="phone" type="tel" class="block-items" name="phone" pattern="">
+      </section>
 
+      <section class="section">
         <label id="number-label" for="number">Age <span class="optional">(Optional)</span>:</label>
-        <input type="number" id="number" name="age" placeholder="16+" min="16" max="130">
-        <br>
+        <input type="number" id="number" class="block-items" name="age" placeholder="16+" min="16" max="130">
+      </section>
 
-        <!--DROPDOWN-->
+      <!--DROPDOWN-->
+      <section class="section">
         <label for="referral">How did you hear about us? <span class="optional">(Optional)</span></label>
         <br>
-        <select id="referral" name="referral" size="1">
+        <select id="referral" class="block-items" name="referral" size="1">
           <option disabled selected value="0">Please select ...</option>
           <option value="socialmedia">Social media</option>
           <option value="advertisement">Advertisement</option>
           <option value="recommendation">Personal Recommendation</option>
           <option value="other">Other</option>
         </select>
-        <br>
+      </section>
+      <!-- <br> -->
 
-        <!--CHECKBOXES-->
-        <fieldset>
-          <legend>Which Newsletters would you like to subscribe to?</legend>
-          <input id="sub-general" type="checkbox" name="subscriptions" value="general" checked>
-          <label for="sub-general">General Updates and Announcements</label>
-          <input id="sub-new" type="checkbox" name="subscriptions" value="new">
-          <label for="sub-new">New in Store</label>
-          <input id="sub-promos" type="checkbox" id="" name="subscriptions" value="promos">
-          <label for="sub-promos">Promotional Offers</label>
-          <input id="sub-members" type="checkbox" id="" name="subscriptions" value="members">
-          <label for="sub-members">Exclusive Member Discounts</label>
-        </fieldset>
-        <br>
+      <!--CHECKBOXES-->
+      <fieldset class="section">
+        <legend>Which Newsletters would you like to subscribe to?</legend>
 
-        <!--CHECKBOXES-->
-        <fieldset>
-          <legend>How may we contact you?</legend>
-          <input id="allow-email" type="checkbox" name="allow" value="email" checked>
-          <label for="allow-email">Email</label>
-          <input id="allow-phone" type="checkbox" name="allow" value="phone">
-          <label for="allow-phone">SMS</label>
-        </fieldset>
-        <br>
+        <label class="block-items"><input id="sub-general" type="checkbox" name="subscriptions" value="general"
+            checked>General Updates and Announcements</label>
 
-        <!--RADIO-->
-        <fieldset>
-          <legend>How often would you like to receive updates?</legend>
-          <input id="freq-daily" type="radio" name="frequency" value="daily" checked>
-          <label for="freq-daily">Daily</label>
-          <input id="freq-weekly" type="radio" name="frequency" value="weekly">
-          <label for="freq-weekly">Weekly</label>
-          <input id="freq-biweekly" type="radio" name="frequency" value="biweekly">
-          <label for="freq-biweekly">Biweekly</label>
-          <input id="freq-monthly" type="radio" name="frequency" value="monthly">
-          <label for="freq-monthly">Monthly</label>
-        </fieldset>
-        <br>
+        <label class="block-items"><input id="sub-new" type="checkbox" name="subscriptions" value="new">New in
+          Store</label>
 
-        <!--COMMENTS-->
-        <label for="comments">We value feedback from our Customers! <span class="optional">(Max 2000
+        <label class="block-items"><input id="sub-promos" type="checkbox" name="subscriptions"
+            value="promos">Promotional
+          Offers</label>
+
+        <label class="block-items"><input id="sub-members" type="checkbox" name="subscriptions"
+            value="members">Exclusive Member
+          Discounts</label>
+
+      </fieldset>
+      <!-- <br> -->
+
+      <!--CHECKBOXES-->
+      <fieldset class="section">
+        <legend>How may we contact you?</legend>
+        <input id="allow-email" type="checkbox" name="allow" value="email" checked>
+        <label for="allow-email">Email</label>
+        <input id="allow-phone" type="checkbox" name="allow" value="phone">
+        <label for="allow-phone">SMS</label>
+      </fieldset>
+      <!-- <br> -->
+
+      <!--RADIO-->
+      <fieldset class="section">
+        <legend>How often would you like to receive updates?</legend>
+        <input id="freq-daily" type="radio" name="frequency" value="daily" checked>
+        <label for="freq-daily">Daily</label>
+        <input id="freq-weekly" type="radio" name="frequency" value="weekly">
+        <label for="freq-weekly">Weekly</label>
+        <input id="freq-biweekly" type="radio" name="frequency" value="biweekly">
+        <label for="freq-biweekly">Biweekly</label>
+        <input id="freq-monthly" type="radio" name="frequency" value="monthly">
+        <label for="freq-monthly">Monthly</label>
+      </fieldset>
+      <!-- <br> -->
+
+      <!--COMMENTS-->
+      <section class="section">
+        <label for="comments">We value feedback from our Customers! <br><span class="optional">(Max 2000
             characters)</span></label>
         <br>
-        <textarea id="comments" name="message" rows="10" cols="30" maxlength="2000"
+        <textarea id="comments" class="block-items" name="message" rows="10" cols="30" maxlength="2000"
           placeholder="Comments and suggestions..."></textarea>
-        <br>
+      </section>
 
-        <!--T&Cs-->
+      <!--T&Cs-->
+      <section class="section">
         <input id="t-c" type="checkbox" name="" value="" required>
         <label for="t-c">Please confirm that you have read our T&Cs and Privacy Policy.*</label>
-        <br>
+      </section>
 
-        <!--SUBMIT-->
-        <input type="submit" id="submit" value="Subscribe">
+      <!--SUBMIT-->
+      <section class="section">
+        <input type="submit" id="submit" class="block-items" value="Subscribe">
+      </section>
 
-      </form>
-      <!--<section>
+    </form>
+    <!--<section>
       <h3 id="C1">h2-h6 with default formats also for screenreaders, search engines</h2>
         <p>Paragraph</p>
     </section>-->
-    </div>
-  </main>
+  </div>
 
   <!--FOOTER-->
   <footer>
