@@ -6,13 +6,14 @@
   --font-color:;
   --bground-color:;
   --canvas-color:;
-  --accent-color:;
+  --accent-color:#c13015;
   --pale-color:;
-  --color-1:;
+  --color-1:#2365a3;
+  --light-font: white;
 }
 
 * {
-  font-family:;
+  font-family:"Lato", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   border-radius:;
 }
@@ -28,11 +29,11 @@ body{
   font:/*family var(var(--font-color);*/
 }
 
-main{}
-
+/*GENERAL PAGE LAYOUT*/
+#header {}
 .page-container {
   width: 100%;
-  max-width: 100ch;
+  /*max-width: 100ch;*/
   margin: 0 auto;
   padding: ;
   background-color: var(--bground-color);
@@ -40,15 +41,66 @@ main{}
   box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);*/
 }
 
-.section {
+.knit-section {
   width: 100%;
   margin: 1rem 0;
 }
 
+footer {}
+
+hr { color: var(--accent-color);}
+
+/*SPECIAL ELEMENTS*/
 img {
   /*this display and margin centers it in parent*/
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+.logo {
+  width: 150px;
+}
+
+/*HEADER aligned sticky*/
+
+header {
+  top: 0;
+  display: flex;
+  align-items:flex-end;
+  padding: 0;
+  border-bottom: 5px solid var(--accent-color);
+}
+#header-img {
+  display: block;
+  margin: 0;
+  width: 150px;
+  height: auto;
+}
+/*NAV top pretty*/
+nav > ul {
+  align-self:flex-end;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: var(--accent-color);
+}
+.nav-item {
+  list-style: none;
+  margin: 1em;
+}
+.nav-item > a {
+  text-decoration: none;
+  color: var(--light-font);
+} 
+
+
+
+
+
+/*FOOTER*/
+footer > p {
+  text-align: center;
+
 }
