@@ -13,3 +13,56 @@
 html {
   font-size: 100%; /*or 62.5%? From now on use rem unit*/
 }
+
+/*FLEXBOX*/
+
+/*Parent*/
+.parent {
+  /*Dimensions*/
+  background-color: var(--card-color);
+  border-bottom: 3px solid var(--accent-color);
+  width: 100vw;
+  height: 110px; /*or 15vh*/
+  /*fix*/
+  
+  /*flexbox*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; /*or flex-start+flex-end*/
+  align-items: stretch;
+}
+
+/*Logo*/
+.logo {
+  background-color: var(--color-1);
+  flex: 6 2 20px;
+}
+#header-img {
+  text-align: left;
+  height: 100px;
+  width: auto;
+}
+/*Children normal*/
+.child {
+  /*Style*/
+  background-color: var(--accent-color);
+  
+  /*flexbox*/
+  flex: 1 1 10px;
+  align-self:flex-end;
+  padding: 0.75em 0;
+  text-align:center;
+}
+
+/*Contact button*/
+
+.parent li {
+/*  border: 1px solid white; Hilfslinie*/
+  list-style: none;  
+}
+
+.child a {
+  color: var(--light-font);
+  text-decoration: none;
+/*  vertical-align: bottom;*/
+}

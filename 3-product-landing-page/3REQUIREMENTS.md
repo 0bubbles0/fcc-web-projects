@@ -27,3 +27,11 @@
 - [ ] The **navbar** should **always** be at the **top** of the **viewport**.
 - [ ] My product landing page should have at least **one media query**.
 - [ ] My product landing page should utilize CSS **flexbox** at least once.
+
+## To do
+- [x] check requirements
+- [ ] fill class, id
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
