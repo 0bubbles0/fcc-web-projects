@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{ 
+  --accent-color:#c13015;
+  --color-1:#2365a3;
+  --light-font: white;
+  --card-color:khaki;
+}
+* {
+  font-family:"Lato", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  border-radius:;
+}
+html {
+  font-size: 100%; /*or 62.5%? From now on use rem unit*/
+}
