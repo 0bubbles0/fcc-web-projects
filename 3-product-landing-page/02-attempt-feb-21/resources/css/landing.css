@@ -1,5 +1,5 @@
 /*IMPORT FONTS*/
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /*html is the root here, but :root as a class has higher specificity*/
 :root{ 
