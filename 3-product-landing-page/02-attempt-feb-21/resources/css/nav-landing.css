@@ -18,9 +18,9 @@ body {
   margin: 1em;
 }
 
-/*FLEXBOX*/
+/*NAV*/
 
-/*Parent*/
+/*NAV Parent*/
 .nav-parent {
   /*Dimensions*/
 /*  background-color: var(--card-color); hilfsfarbe*/
@@ -28,20 +28,17 @@ body {
   width: 100%;
 /*height: 110px; or 15vh*/
   /*fix*/
-  
   /*flexbox*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around; /*or flex-start+flex-end*/
   align-items: flex-end;
 }
-
 .nav-parent li {
   /*  border: 1px solid white; Hilfslinie*/
   list-style: none;  
 }
-
-/*Logo*/
+/*NAV Logo*/
 .nav-logo {
 /*  background-color: var(--color-1); hilfsfarbe*/
   flex: 4 3 500px;
@@ -55,7 +52,7 @@ body {
   width: 15vw;
   height: auto;
 }
-/*Children normal*/
+/*NAV Children normal*/
 .nav-link {
   /*Style*/
   background-color: var(--accent-color);
@@ -65,27 +62,55 @@ body {
   padding: 0.75em;
   text-align:center;
 }
-
 .nav-link a {
   color: var(--light-font);
   text-decoration: none;
   font-weight: bolder;
   font-size:larger
   font: bolder larger Lato;
-
 /*  vertical-align: bottom;*/
 }
 .nav-link a:hover {
   opacity: 0.8;
 }
-
-/*Contact button*/
+/*NAV Contact button*/
 .button {
   /*border-radius: 5px;*/
   background-color: var(--color-1);
 }
 
 
+
+
+/*CONTACT*/
+/*CONTACT Parent*/
+.form-container {
+ /* background-color: lightgreen; hilfsfarbe
+  border: 1px solid green;*/
+  max-width: 100ch;
+  height: 70vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  align-items: center;
+}
+/*CONTACT every child*/
+.form-container > div {
+ /* border: 1px solid white; /*Hilfslinie*/
+ /* margin: 1em;*/
+}
+/*CONTACT Left*/
+.form-left {
+  background-color: var(--color-1); /*hilfsfarbe*/
+ /* flex: 1 1 10px;*/
+}
+/*CONTACT Right*/
+.form-right {
+  background-color: var(--card-color); /*hilfsfarbe*/
+ /* flex: 1 1 10px;*/
+}
 
 /*FOOTER*/
 hr {
@@ -99,9 +124,15 @@ footer > p {
 
 /*MOBILE*/
 @media only screen and (max-width: 700px) {
+  /*NAV*/
   #header-img {width: 25vw;}
   .no-mobile { display: none;}
+  
+  /*CONTACT*/
+  .form-container {flex-flow: column wrap;}
 }
+
+
 
 /*REST*/
 /*footer > .logo {
@@ -110,3 +141,7 @@ footer > p {
   width: 150px;
   height: auto;
 }*/
+
+
+/*Hilfslinien*/
+section, section > div {border: 1px solid green;}
