@@ -61,8 +61,34 @@
       <section id="sec-prices" class="knit-section">Prices</section>
 
       <!--CONTACT. form-->
-      <section id="sec-contact" class="knit-section">
-        Contact
+      <section id="sec-contact" class="form-container">
+        <h3>Find out more!</h3>
+        <h4>Get in touch with your questions and enquiries<br>and don’t forget to subscribe to the Newsletter for the
+          latest updates</h4>
+        <form class="form">
+          <!--First name-->
+          <input class="form-name" type="text" name="first-name" placeholder="First name" required>
+          <!--Last name-->
+          <input class="form-name" type="text" name="last-name" placeholder="Last name" required>
+          <!--Email address-->
+          <input class="form-block" type="email" name="email" placeholder="Email address" required>
+          <!--Select. I'd like to: Ask a question / Get a quote / Review a purchase-->
+          <select class="form-block" name="reason">
+            <option value="0" selected disabled>I'd like to:</option>
+            <option value="question">Ask a question</option>
+            <option value="quote">Get a quote</option>
+            <option value="review">Review a purchase</option>
+          </select>
+          <!--Textarea-->
+          <textarea class="form-block" name="message" rows="8" cols="30" placeholder="My message..."></textarea>
+          <!--Checkbox-->
+          <section class="form-block">
+            <input id="newsletter" type="checkbox" name="newsletter" value="yes">
+            <label for="newsletter">Please send me Newsletters with updates and offers!</label>
+          </section>
+          <!--Submit-->
+          <input type="submit" class="button" value="Send">
+        </form>
       </section>
     </div>
   </main>
