@@ -30,8 +30,10 @@
 
 ## To do
 - [x] check requirements
-- [ ] fill class, id
-- [ ] 
-- [ ] 
+- [x] fill class, id
+
+## Next up
+- [ ] flexbox: individual item sizes/zoom/alignment 
+- [ ] flexbox: make img behave
 - [ ] 
 - [ ] 
