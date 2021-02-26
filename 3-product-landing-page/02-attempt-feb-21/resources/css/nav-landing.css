@@ -11,6 +11,7 @@
 :root{ 
   --accent-color:#c13015;
   --color-1:#2365a3;
+  --canvas-color: blue;
   --light-font: white;
   --card-color:khaki;
 }
@@ -21,23 +22,31 @@
 }
 html {
   font-size: 100%; /*or 62.5%? From now on use rem unit*/
+  font-weight: 300;
 }
 
 body {
-  margin: 1em;
+/*  margin: 1em;*/
 /*  font-size: 1.25em;*/
   line-height: 2.5;
+background-color: lightgreen;
+}
+
+/*NAV fix*/
+header {
+  background-color: var(--canvas-color);
+  position: fixed;
+  top: 0;
+  width: 99%;
+  height: 16vh;
 
 }
 
-/*NAV*/
-
 /*NAV Parent*/
 .nav-parent {
-  /*Dimensions*/
-/*  background-color: var(--card-color); hilfsfarbe*/
   border-bottom: 3px solid var(--accent-color);
-  width: 100%;
+  /*  background-color: var(--card-color); hilfsfarbe*/
+  /*Dimensions*/
 /*height: 110px; or 15vh*/
   /*fix*/
   /*flexbox*/
@@ -61,8 +70,9 @@ body {
   width: auto;
   diplay: block;
   max-width: 30%;*/
-  width: 15vw;
-  height: auto;
+ /* width: 15vw;
+  height: auto;*/
+  height: 10vh;
 }
 /*NAV Children normal*/
 .nav-link {
