@@ -1,0 +1,66 @@
+/*Fonts Lato, Fira Code, Great Vibes, Open Sans, Pacifico, Courgette, Roboto*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');*/
+
+
+#header-img {
+  /*text-align: left;
+    max-height: 90%;
+    width: auto;
+    diplay: block;
+    max-width: 30%;*/
+   /* width: 15vw;
+    height: auto;*/
+    height: 10vh;
+}
+
+.section-parent {
+  /*  max-width: 150ch;*/
+  margin: 0 1vw;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+  align-items:stretch;
+}
+
+/*every child*/
+.section-child {
+  /* margin: 1em;*/
+  flex: 1 1 50%;
+  height: 83vh;
+  /*column sub-flex*/
+  display: flex;
+  flex-flow: column /*nowrap*/;
+  justify-content:center;
+  align-items:center;
+}
+/*Left child*/
+.section-child-left {
+}
+/*Right child*/
+.section-child-right {
+}
+.content {}
+/*.content-left {padding-left: 3vw;}*/
+.graphic {}
+.section-img {
+  height: 75vh;
+ /* max-width: 80%;*/
+ /* max-width: 35ch;
+  height: auto;*/
+}
+.hero-logo {
+  max-width: 80%;
+  height: auto;
+}
+
+.section-img {
+  height: 75vh;
+ /* max-width: 80%;*/
+ /* max-width: 35ch;
+  height: auto;*/
+}

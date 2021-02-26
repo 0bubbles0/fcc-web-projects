@@ -1,19 +1,13 @@
-/*Fonts Lato, Fira Code, Great Vibes, Open Sans, Pacifico, Courgette, Roboto*/
-/*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 
 :root{ 
   --accent-color:#c13015;
   --color-1:#2365a3;
   --canvas-color: white;
   --light-font: white;
-  --card-color:khaki;
+  --card-color:#f2d5d0;
+  /*#ecc0b8*/
 }
 * {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -26,10 +20,7 @@ html {
 }
 
 body {
-/*  margin: 1em;*/
-/*  font-size: 1.25em;*/
   line-height: 2.5;
-background-color: lightgreen;
 }
 
 /*NAV fix*/
@@ -45,7 +36,6 @@ header {
   height: 16vh;
 }
 
-
 /*NAV Parent*/
 .nav-parent {
   border-bottom: 3px solid var(--accent-color);
@@ -55,23 +45,16 @@ header {
   justify-content: space-around; /*or flex-start+flex-end*/
   align-items: flex-end;
 }
-.nav-parent li {   list-style: none; }
+.nav-parent li {   list-style: none; 
+
+}
 /*NAV Logo*/
 .nav-logo {   flex: 4 3 500px; }
-#header-img {
-/*text-align: left;
-  max-height: 90%;
-  width: auto;
-  diplay: block;
-  max-width: 30%;*/
- /* width: 15vw;
-  height: auto;*/
-  height: 10vh;
-}
+#header-img {  height: 10vh;}
 /*NAV Children normal*/
 .nav-link {
-  /*Style*/
   background-color: var(--accent-color);
+  /*Style*/
   /*flexbox*/
   flex: 1 1 1fr;
   align-self:flex-end;
@@ -84,11 +67,8 @@ header {
   font-weight: bolder;
   font-size:larger
   font: bolder larger Lato;
-/*  vertical-align: bottom;*/
 }
-.nav-link:hover {
-  opacity: 0.8;
-}
+.nav-link:hover {   opacity: 0.8; }
 /*NAV Contact button*/
 .button {
   /*border-radius: 5px;*/
@@ -96,11 +76,8 @@ header {
 }
 
 
-
 /*Section flexbox*/
 .section-parent {
-/*  max-width: 150ch;*/
-  height: 83vh;
   margin: 0 1vw;
 
   display: flex;
@@ -108,48 +85,111 @@ header {
   justify-content:space-between;
   align-items:stretch;
 }
-/*every child*/
-.section-parent > div {
- /* margin: 1em;*/
-}
-/*Left child*/
-.section-child-left {
+.section-child {
   flex: 1 1 50%;
+  height: 83vh;
+  /*column sub-flex*/
+  display: flex;
+  flex-flow: column /*nowrap*/;
+  justify-content:center;
+  align-items:center;
 }
-/*Right child*/
-.section-child-right {
-  flex: 1 1 50%;
-}
-.content {}
 .graphic {}
-
-.card {}
-.card-1, .card-2, .card-3, .card-4{}
 .section-img {
-  max-width: 35ch;
+  height: 75vh;
+/*  height: auto;*/
+}
+.hero-logo {
+  max-width: 80%;
   height: auto;
 }
 
+/*Card Section*/
+#sec-prices {
+/*  height: 83vh;*/
+  margin: 1vh 1vw 5vh 1vw;
+}
+#sec-prices > h3 { margin: 2.5vh 0;}
+.card-parent {
+/*  height: 70vh;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; /*or space-evenly*/
+  align-items: ;
+}
+.card {
+  width: calc(92% / 4);
+/*  height: 60vh;*/
+  text-align: center;
+}
+.card * {margin: 1.5vh 0 0 0;}
+.card > h4 { }
+.card > img {
+ /* height: 45vh;
+  width: auto;*/
+  width: 75%;
+  height: auto;
+  border-radius:;
+  margin: 0 auto;
+}
+
+/*Form*/
+.form {
+  width: 8  0%;
+/*  max-width: 47ch;*/
+  margin: 0 auto;
+  padding: 1rem;
+}
+.form-name {width: 49%; padding: 0.4rem;}
+.form-block {display:block; width: 100%; margin: 0.8rem 0; padding: 0.4rem;}
+.form-button {display: block;
+  /*width: 12ch;*/
+  margin: auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.2);
+  background-color: var(--color-1);
+  color: var(--light-font);
+}
+.form-button:hover {
+  /* background-color: ; */
+  opacity: 0.8;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 6px 6px 6px rgba(0, 0, 0, 0.23);
+ }
+ select, input[type=checkbox], input[type=submit] {cursor: pointer;}
 
 /*General design*/
 h3 {
-  font: 2.5em "Courgette";
+  font: 2.5rem "Courgette";
   color: var(--accent-color);
+}
+h4 {
+  font: 1.5rem "Courgette";
+  color: var(--color-1);
 }
 section > li {
 /*  line-height: 1.8;*/
 }
+p, li, a {font-size: 1.3rem;}
 .bold-p {
   /*font-style: italic;*/
-  font: bolder 1em "Courgette";
+  font: bold 1em "Courgette";
  /* font-weight: bold;*/
   color: var(--color-1);
 }
 
+img {border-radius: 5px;}
+.card-style {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);
+}
 
 
 /*FOOTER*/
 hr {
+  margin-top: 10vh;
   height: 2px;
   border: none;
   background-color: var(--accent-color);
@@ -159,11 +199,13 @@ footer > p {
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   /*NAV*/
   #header-img {width: 25vw;}
   .no-mobile { display: none;}
   
+  /*Cards*/
+  .card {width: 60vw; margin: 2vh auto;}
   /*CONTACT*/
   .section-parent {flex-flow: column nowrap;}
 }
@@ -179,4 +221,7 @@ footer > p {
 }*/
 
 /*Hilfslinien*/
-section, section > div {border: 1px solid green;}
+/*
+body {background-color: lightgreen;}
+section, section > div, section>div>div {border: 1px solid green;}
+*/
