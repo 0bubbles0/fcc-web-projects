@@ -11,7 +11,7 @@
 :root{ 
   --accent-color:#c13015;
   --color-1:#2365a3;
-  --canvas-color: blue;
+  --canvas-color: white;
   --light-font: white;
   --card-color:khaki;
 }
@@ -33,37 +33,31 @@ background-color: lightgreen;
 }
 
 /*NAV fix*/
+html {
+  margin-top: 16vh;
+  scroll-padding-top: 16vh;
+}
 header {
   background-color: var(--canvas-color);
   position: fixed;
   top: 0;
   width: 99%;
   height: 16vh;
-
 }
+
 
 /*NAV Parent*/
 .nav-parent {
   border-bottom: 3px solid var(--accent-color);
-  /*  background-color: var(--card-color); hilfsfarbe*/
-  /*Dimensions*/
-/*height: 110px; or 15vh*/
-  /*fix*/
   /*flexbox*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around; /*or flex-start+flex-end*/
   align-items: flex-end;
 }
-.nav-parent li {
-  /*  border: 1px solid white; Hilfslinie*/
-  list-style: none;  
-}
+.nav-parent li {   list-style: none; }
 /*NAV Logo*/
-.nav-logo {
-/*  background-color: var(--color-1); hilfsfarbe*/
-  flex: 4 3 500px;
-}
+.nav-logo {   flex: 4 3 500px; }
 #header-img {
 /*text-align: left;
   max-height: 90%;
@@ -106,7 +100,7 @@ header {
 /*Section flexbox*/
 .section-parent {
 /*  max-width: 150ch;*/
-  height: 80vh;
+  height: 83vh;
   margin: 0 1vw;
 
   display: flex;
