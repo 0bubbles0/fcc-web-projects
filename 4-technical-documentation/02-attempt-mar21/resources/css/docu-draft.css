@@ -1,54 +1,105 @@
 /*IMPORT FONTS*/
 @import url();
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 /*html is the root here, but :root as a class has higher specificity*/
 :root{ 
-  --font-color:;
-  --bground-color:;
+  --bground-color:khaki;
+  --nav-color:lightgrey;
+  --hover-color:grey;
+  --font-color: black;
+  --heading-color: purple;
   --canvas-color:;
-  --accent-color:;
+  --accent-color:red;
   --pale-color:;
   --color-1:;
 }
 
 * {
-  font-family:;
   box-sizing: border-box;
   border-radius:;
 }
 html {
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 100%; /*or 62.5%? From now on use rem unit*/
+  font-weight: 400;
+  color: var(--font-color);
+  line-height: 1.7;
 }
-
-/*Set global layout, spacing, color, font*/
-body{
-  margin:;
-  background:;
-  background-color: var(--canvas-color); /*or set in html*/
-  font:/*family var(var(--font-color);*/
+/*NAV*/
+#navbar {
+  background-color: var(--nav-color);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 330px;
+  height: 100%;
+  padding-left: 0.5vw;
+  border-right: 2px solid var(--heading-color);
 }
-
-main{}
-
-.page-container {
-  width: 100%;
-  max-width: 100ch;
-  margin: 0 auto;
-  padding: ;
-  background-color: var(--bground-color);
-  /*border-radius: 10px;
-  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);*/
+nav ul {
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*padding: 0;*/
 }
-
-.section {
-  width: 100%;
-  margin: 1rem 0;
+nav li {
+  list-style: none;
 }
-
-img {
-  /*this display and margin centers it in parent*/
+.nav-link {
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  height: 6vh;
+/*  border-top: 1px solid var(--heading-color);*/
 }
+.nav-link-last {/*border-bottom: 1px solid var(--heading-color);*/}
+.nav-link:hover {
+  background-color:var(--hover-color);
+  color: white;
+}
+
+/*Headings*/
+nav header {
+  margin-top: 3vh;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--heading-color);
+  text-align: center;
+}
+.nav-link {
+  font-weight: 400;
+  color: var(--heading-color);
+}
+section > header {
+  margin-top: 5vh;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+/*MAIN*/
+main{
+  margin-left: 335px;
+}
+article {
+  margin: 0 3vw;
+}
+
+p, li {text-align: justify;}
+code {margin-left: 2vw;}
+span {color:  var(--accent-color); font-weight:bolder;}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    border-right: none;
+/*    border-bottom: 2px solid var(--heading-color);*/
+  }
+  main {
+    margin-left: 0;
+    margin-top: 380px;
+  }
+}
+
+/*Hilfslinien*/
+/*main {border: 1px solid green; background-color: var(--bground-color);}*/
