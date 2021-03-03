@@ -3,10 +3,10 @@
 
 /*html is the root here, but :root as a class has higher specificity*/
 :root{ 
-  --font-color:black;
-  --dominant-color: red;
-  --bground-color: darkcyan;
-  --hover-color:grey;
+  --font-color:#023047ff;
+  --dominant-color: #ffb703ff;
+  --bground-color: #8ecae6ff;
+  --hover-color:#219ebcff;
 }
 
 * {
@@ -16,7 +16,7 @@
   border-radius:;
 }
 html {
-  font-size: 100%; /*or 62.5%? From now on use rem unit*/
+  font-size: 120%; /*or 62.5%? From now on use rem unit*/
 }
 
 /*Set global layout, spacing, color, font*/
@@ -35,15 +35,15 @@ body{
   top: 0;
   left: 0;
 }
+section {
+  min-height: 100vh;
+  padding:11vh 2vw 2vh;
+}
 #welcome-section {
 /*  width: 100%;*/
   height: 100vh;
 }
 /*main {width: 100;}*/
-section {
-  height: 100vh;
-  padding-top:11vh;
-}
 
 /*Color*/
 #navbar {  background-color: var(--dominant-color);}
@@ -76,15 +76,72 @@ nav li { list-style: none;}
   /*opacity, color*/
 }
 
-/*OTHER*/
-
-nav {
+/*Welcome*/
+#welcome-section {line-height:2.5;}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h2, h3 {text-align: center;}
+#welcome-section > ul {
+  font-size: 1.7rem;
+  margin: auto;
+}
+.logo-welcome {
+  display:block;
+  max-width: 10%;
+  height: auto;
+  margin: 0 auto;
 }
 
+/*Projects*/
+/*Project Layout*/
+.project-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.project-tile {
+  display: block;
+  width: 22vw;
+  /*  height: 40vh;*/
+  padding: 0.5em;
+
+}
+
+.project-tile-frame {
+}
+.project-tile-img {
+/*  height: 20vh;
+  width: 15vw;
+  object-fit: cover;*/
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*Project Design*/
+#projects > h3 {text-align: center;}
+.card-style {
+  text-decoration: none;
+  text-align:center;
+  background-color: var(--bground-color);
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);
+}
+.card-style:hover {opacity: 0.8;}
+
+
+
+
+/*OTHER*/
 main{}
 
 footer {
   text-align: center;
+  border-top: 3px solid var(--dominant-color);
+  padding-bottom: 0;
 }
 
 
@@ -104,17 +161,17 @@ footer {
   margin: 1rem 0;
 }
 
-img {
-  /*this display and margin centers it in parent*/
+/*img {
+  /*this display and margin centers it in parent
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-}
+} */
 
 @media {}
 
 
 
 /*Hilfslinie*/
-section, footer {border: 1px solid green;}
+/*.project-tile-frame {border: 1px solid green;} */
