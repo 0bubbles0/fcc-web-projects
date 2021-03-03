@@ -21,30 +21,73 @@ html {
 
 /*Set global layout, spacing, color, font*/
 body{
-  margin:;
+  margin:0;
   background:;
   background-color: var(--canvas-color); /*or set in html*/
   font:/*family var(var(--font-color);*/
 }
 
-/*Layout*/
+/*Page Layout*/
 #navbar {
   width: 100%;
+  height: 10vh;
   position: fixed;
   top: 0;
   left: 0;
 }
 #welcome-section {
+/*  width: 100%;*/
   height: 100vh;
+}
+/*main {width: 100;}*/
+section {
+  height: 100vh;
+  padding-top:11vh;
+}
+
+/*Color*/
+#navbar {  background-color: var(--dominant-color);}
+#welcome-section, #contact, .project-tile { background-color: var(--bground-color);}
+#projects, footer {background-color: var(--hover-color);}
+
+/*Nav*/
+/*Nav logo & list flext*/
+
+/*nav list flex*/
+.nav-link-container {
+  height: 10vh;
+  margin: 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*nav list style*/
+nav li { list-style: none;}
+.nav-link { 
+  display: block; /*height,width equal li*/
+  padding: 1em;
+  text-decoration: none;
+}
+.nav-link:hover {
+  background-color: var(--hover-color);
+  /*opacity, color*/
 }
 
 /*OTHER*/
 
 nav {
-  background-color: var(--dominant-color);
 }
 
 main{}
+
+footer {
+  text-align: center;
+}
+
+
 
 .page-container {
   width: 100%;
@@ -70,3 +113,8 @@ img {
 }
 
 @media {}
+
+
+
+/*Hilfslinie*/
+section, footer {border: 1px solid green;}
