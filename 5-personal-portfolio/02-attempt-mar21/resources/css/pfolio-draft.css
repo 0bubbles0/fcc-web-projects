@@ -1,18 +1,17 @@
 /*IMPORT FONTS*/
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /*html is the root here, but :root as a class has higher specificity*/
 :root{ 
-  --font-color:;
-  --bground-color:;
-  --canvas-color:;
-  --accent-color:;
-  --pale-color:;
-  --color-1:;
+  --font-color:black;
+  --dominant-color: red;
+  --bground-color: darkcyan;
+  --hover-color:grey;
 }
 
 * {
-  font-family:;
+  font-family:"Roboto", Helvetica, sans-serif;
+  color: var(--font-color);
   box-sizing: border-box;
   border-radius:;
 }
@@ -26,6 +25,23 @@ body{
   background:;
   background-color: var(--canvas-color); /*or set in html*/
   font:/*family var(var(--font-color);*/
+}
+
+/*Layout*/
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#welcome-section {
+  height: 100vh;
+}
+
+/*OTHER*/
+
+nav {
+  background-color: var(--dominant-color);
 }
 
 main{}
@@ -52,3 +68,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@media {}
