@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 :root{ 
-  --accent-color:#c13015;
-  --color-1:#2365a3;
-  --canvas-color: white;
+  --accent-color:#c92c0e;
+  --color-1:#004F70;
+  --canvas-color: #ede9d0;
   --light-font: white;
-  --card-color:#f2d5d0;
-  /*#ecc0b8*/
+  --card-color: #ffac7d;
+  /*old palette: #c13015 #2365a3 white #f2d5d0*/
 }
 * {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -17,6 +17,7 @@
 html {
   font-size: 100%; /*or 62.5%? From now on use rem unit*/
   font-weight: 300;
+  background-color:var(--canvas-color);
 }
 
 body {
@@ -94,6 +95,7 @@ header {
   justify-content:center;
   align-items:center;
 }
+.content{ }
 .graphic {}
 .section-img {
   height: 75vh;
@@ -203,7 +205,9 @@ footer > p {
   /*NAV*/
   #header-img {width: 25vw;}
   .no-mobile { display: none;}
-  
+  /*main order*/
+  .graphic {order: 1;}
+  .content {order: 2;}
   /*Cards*/
   .card {width: 60vw; margin: 2vh auto;}
   /*CONTACT*/
