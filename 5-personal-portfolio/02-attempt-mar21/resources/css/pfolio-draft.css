@@ -40,7 +40,9 @@ body{
   left: 0;
 }
 section {
+  width: 100%;
   min-height: 100vh;
+  margin: 1rem 0;
   padding:11vh 2vw 2vh;
 }
 #welcome-section {
@@ -73,9 +75,8 @@ section {
 }
 /*nav list flex*/
 .nav-link-container {
-  height: 10vh;
   margin: 0;
-  
+  height: 10vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -131,7 +132,6 @@ p {text-align:center;}
   /*  height: 40vh;*/
   margin: 2em auto;
   padding: 0.5em;
-
 }
 
 .project-tile-frame {}
@@ -161,10 +161,10 @@ p {text-align:center;}
 #progress {
   display:flex; 
   flex-flow: row wrap;
+  padding:  2em;
 }
 .progress-child {
   flex: 1 1 50%;
-  padding: 2em;
 }
 
 /*Contact*/
@@ -188,44 +188,21 @@ p {text-align:center;}
 i {padding-right: 6px;}
 
 /*OTHER*/
-main{}
-
 footer {
   text-align: center;
   border-top: 3px solid var(--dominant-color);
   padding-bottom: 0;
 }
 
-
-
-.page-container {
-  width: 100%;
-  max-width: 100ch;
-  margin: 0 auto;
-  padding: ;
-  background-color: var(--bground-color);
-  /*border-radius: 10px;
-  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);*/
-}
-
-.section {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-/*img {
-  /*this display and margin centers it in parent
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-} */
-
 @media (max-width: 800px) {
   .hide {display:none;}
-  #welcome-section {background: var(--bground-color); line-height:1.5;}
+  #welcome-section {
+    background: var(--bground-color); 
+    line-height:1.5;}
   h1 {font-size:2rem;}
-  .contact-container {display:flex; flex-flow: column nowrap;
+  .contact-container {
+    display:flex; 
+    flex-flow: column nowrap;
     font-size: 1.3rem;
   }
 }
