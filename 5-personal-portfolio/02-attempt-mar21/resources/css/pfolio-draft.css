@@ -27,7 +27,8 @@ body{
   margin:0;
   background:;
 /*  background-color: var(--canvas-color); /*or set in html*/
-  font:/*family var(var(--font-color);*/
+  /*font:family var(var(--font-color);*/
+  font-size:1.2rem;
 }
 
 /*Page Layout*/
@@ -89,7 +90,8 @@ nav li { list-style: none;}
   text-decoration: none;
 }
 .nav-link:hover {
-  background-color: var(--bground-color);
+  background-color: var(--font-color);
+  color: var(--dominant-color);
   /*opacity, color*/
 }
 
@@ -99,7 +101,10 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
 }
-h2, h3 {text-align: center;}
+h2, h3 {text-align: center; font-size: 2rem;}
+h4 {font-size: 1.6rem;}
+h3, h4 {margin: 0;}
+p {text-align:center;}
 #welcome-section > ul {
   font-size: 1.7rem;
   margin: auto;
@@ -129,8 +134,7 @@ h2, h3 {text-align: center;}
 
 }
 
-.project-tile-frame {
-}
+.project-tile-frame {}
 .project-tile-img {
 /*  height: 20vh;
   width: 15vw;
@@ -152,12 +156,11 @@ h2, h3 {text-align: center;}
 .card-style:hover {opacity: 0.8;}
 
 /*Progress*/
-#progress h3 {text-align:left; text-decoration:underline;}
+#progress h3 {text-align:left; /*text-decoration:underline;*/}
 #progress > ul {font-size:1.4rem;}
 #progress {
   display:flex; 
-  flex-flow: column wrap:
-
+  flex-flow: row wrap;
 }
 .progress-child {
   flex: 1 1 50%;
@@ -218,9 +221,10 @@ footer {
   height: auto;
 } */
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .hide {display:none;}
-  #welcome-section {background: var(--bground-color);}
+  #welcome-section {background: var(--bground-color); line-height:1.5;}
+  h1 {font-size:2rem;}
   .contact-container {display:flex; flex-flow: column nowrap;
     font-size: 1.3rem;
   }
