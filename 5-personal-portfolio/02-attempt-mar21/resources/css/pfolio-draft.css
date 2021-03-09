@@ -49,6 +49,9 @@ section {
 #navbar {  background-color: var(--dominant-color);}
 #welcome-section, #contact, .project-tile { background-color: var(--bground-color);}
 #projects, footer {background-color: var(--hover-color);}
+#welcome-section {
+  background: var(--bground-color) url("")
+}
 
 /*Nav*/
 /*Nav logo & list flext*/
