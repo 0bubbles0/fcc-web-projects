@@ -10,13 +10,14 @@ body {
   text-align: center;
   color: #2D254E;
   margin: 0;
+  background: rgba(225, 223, 123, 0.2); 
   /*background?*/
 }
 #main {
-  margin: 30px 8px;
+  margin: 5vh auto;
+  max-width: 80ch;
   padding: 50px;
   border-radius: 5px;
-  background: rgba(225, 223, 123, 0.2); 
   /*linear-gradient(90deg, #80E4E4, #E1E97B, #8D36B0) 
   OR linear-gradient(135deg, rgba(128, 228, 228, 0.3), rgba(225, 223, 123, 0.3), rgba(141, 54, 176, 0.3)) 
   OR rgba(225, 223, 123, 0.5)*/

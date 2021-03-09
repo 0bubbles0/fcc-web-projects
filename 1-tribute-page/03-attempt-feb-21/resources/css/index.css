@@ -6,10 +6,10 @@
 
 body {
   /*FONT use shortcut for the following
-  font-size: 100%;
   font-family:;
   font-weight:;
   line-height:;*/
+  font-size: 120%;
   font-family: sans-serif;
   /*COLOR
   color: var(--font-color, blue);
