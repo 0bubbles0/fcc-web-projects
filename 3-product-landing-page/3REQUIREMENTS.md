@@ -12,21 +12,21 @@
 * Once you're done, submit the URL to your working project with all its tests passing.
 
 ## TASKS
-- [ ] My product landing page should have a header element with a corresponding **id="header"**.
-- [ ] I can see an image within the header element with a corresponding **id="header-img"**. A company logo would make a good image here.
-- [ ] Within the #header element I can see a nav element with a corresponding **id="nav-bar"**.
-- [ ] I can see at least **three** clickable elements inside the nav element, each with the **class nav-link**.
-- [ ] When I **click a .nav-link button** in the nav element, I am taken to the corresponding **section** of the landing page.
+- [x] My product landing page should have a header element with a corresponding **id="header"**.
+- [x] I can see an image within the header element with a corresponding **id="header-img"**. A company logo would make a good image here.
+- [x] Within the #header element I can see a nav element with a corresponding **id="nav-bar"**.
+- [x] I can see at least **three** clickable elements inside the nav element, each with the **class nav-link**.
+- [x] When I **click a .nav-link button** in the nav element, I am taken to the corresponding **section** of the landing page.
 - [ ] I can watch an embedded product video with **id="video"**.
-- [ ] My landing page has a form element with a corresponding **id="form"**.
-- [ ] Within the form, there is an input field with **id="email"** where I can enter an email address.
-- [ ] The #email input field should have **placeholder** text to let the user know what the field is for.
-- [ ] The #email input field uses HTML5 **validation** to confirm that the entered text is an email address.
-- [ ] Within the form, there is a submit input with a corresponding **id="submit"**.
-- [ ] When I **click** the #submit element, the email is submitted to a static page (use this mock URL: <https://www.freecodecamp.com/email-submit>).
-- [ ] The **navbar** should **always** be at the **top** of the **viewport**.
-- [ ] My product landing page should have at least **one media query**.
-- [ ] My product landing page should utilize CSS **flexbox** at least once.
+- [x] My landing page has a form element with a corresponding **id="form"**.
+- [x] Within the form, there is an input field with **id="email"** where I can enter an email address.
+- [x] The #email input field should have **placeholder** text to let the user know what the field is for.
+- [x] The #email input field uses HTML5 **validation** to confirm that the entered text is an email address.
+- [x] Within the form, there is a submit input with a corresponding **id="submit"**.
+- [x] When I **click** the #submit element, the email is submitted to a static page (use this mock URL: <https://www.freecodecamp.com/email-submit>).
+- [x] The **navbar** should **always** be at the **top** of the **viewport**.
+- [x] My product landing page should have at least **one media query**.
+- [x] My product landing page should utilize CSS **flexbox** at least once.
 
 ## To do
 - [x] check requirements

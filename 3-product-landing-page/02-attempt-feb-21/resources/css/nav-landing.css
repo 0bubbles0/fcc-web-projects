@@ -53,7 +53,7 @@ header {
 .nav-logo {   flex: 4 3 500px; }
 #header-img {  height: 10vh;}
 /*NAV Children normal*/
-.nav-link {
+.nav-item {
   background-color: var(--accent-color);
   /*Style*/
   /*flexbox*/
@@ -62,14 +62,14 @@ header {
   padding: 0 1em;
   text-align:center;
 }
-.nav-link a {
+.nav-link {
   color: var(--light-font);
   text-decoration: none;
   font-weight: bolder;
   font-size:larger
   font: bolder larger Lato;
 }
-.nav-link:hover {   opacity: 0.8; }
+.nav-item:hover {   opacity: 0.8; }
 /*NAV Contact button*/
 .button {
   /*border-radius: 5px;*/
@@ -79,7 +79,7 @@ header {
 
 /*Section flexbox*/
 .section-parent {
-  margin: 0 1vw;
+  margin: 5vh 1vw;
 
   display: flex;
   flex-flow: row nowrap;
@@ -100,6 +100,9 @@ header {
 .section-img {
   height: 75vh;
 /*  height: auto;*/
+}
+iframe {
+  height: 315;
 }
 .hero-logo {
   max-width: 80%;
