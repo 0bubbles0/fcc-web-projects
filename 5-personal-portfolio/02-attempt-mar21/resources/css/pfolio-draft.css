@@ -23,7 +23,7 @@ html {
 body{
   margin:0;
   background:;
-  background-color: var(--canvas-color); /*or set in html*/
+/*  background-color: var(--canvas-color); /*or set in html*/
   font:/*family var(var(--font-color);*/
 }
 
@@ -47,10 +47,11 @@ section {
 
 /*Color*/
 #navbar {  background-color: var(--dominant-color);}
-#welcome-section, #contact, .project-tile { background-color: var(--bground-color);}
+#contact, .project-tile { background-color: var(--bground-color);}
 #projects, footer {background-color: var(--hover-color);}
 #welcome-section {
-  background: var(--bground-color) url("")
+  background: /*var(--bground-color) url("https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/bordure-left-nav.png") no-repeat scroll left bottom, */ var(--bground-color) url("https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/bordure-right-nav.png") no-repeat scroll right bottom;
+  background-size:contain;
 }
 
 /*Nav*/
@@ -60,7 +61,7 @@ section {
 .nav-link-container {
   height: 10vh;
   margin: 0;
-
+  
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -174,7 +175,9 @@ footer {
   height: auto;
 } */
 
-@media {}
+@media (max-width: 750px) {
+  #welcome-section {background: var(--bground-color);}
+}
 
 
 
