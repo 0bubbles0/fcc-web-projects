@@ -31,9 +31,12 @@
 <body>
   <nav id="navbar">
     <!-- <img class="nav-logo" src="">-->
+    <img class="nav-logo" src="resources/img/logo/logo-250-100.png"
+      onerror="this.src='https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/logo-250-100.png'">
     <ul class="nav-link-container">
-      <li><a class="nav-link" href="#welcome-section">Home</a></li>
-      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link hide" href="#welcome-section">Home</a></li>
+      <li><a class="nav-link hide" href="#projects">Projects</a></li>
+      <li><a class="nav-link hide" href="#progress">Progress</a></li>
       <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -59,43 +62,55 @@
           <p class="project-name">1. Tribute</p>
           <div class="project-tile-frame">
             <img class="project-tile-img" src="resources/img/projects/screenshots-ffox-vwport/1-tribute.png"
-              onerror="this.src='FILL'" alt="Tribute">
+              onerror="this.src='https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/5-project-thumbs/screenshots-ffox-vwport/1-tribute.png'"
+              alt="Tribute">
           </div>
         </a>
         <a class="project-tile card-style" href="https://codepen.io/0Bubbles0/full/xxRrgeo " target="_blank">
           <p class="project-name">2. Form</p>
           <div class="project-tile-frame">
             <img class="project-tile-img" src="resources/img/projects/screenshots-ffox-vwport/2-form.png"
-              onerror="this.src='FILL'" alt="Form">
+              onerror="this.src='https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/5-project-thumbs/screenshots-ffox-vwport/2-form.png'"
+              alt="Form">
           </div>
         </a>
         <a class="project-tile card-style" href="https://codepen.io/0Bubbles0/full/VwmxgWq " target="_blank">
           <p class="project-name">3. Product Landing Page</p>
           <div class="project-tile-frame">
             <img class="project-tile-img" src="resources/img/projects/screenshots-ffox-vwport/3-landing.png"
-              onerror="this.src='FILL'" alt="Product Landing">
+              onerror="this.src='https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/5-project-thumbs/screenshots-ffox-vwport/3-landing.png'"
+              alt="Product Landing">
           </div>
         </a>
         <a class="project-tile card-style" href="https://codepen.io/0Bubbles0/full/mdOLvqZ " target="_blank">
           <p class="project-name">4. Technical Documentation</p>
           <div class="project-tile-frame">
             <img class="project-tile-img" src="resources/img/projects/screenshots-ffox-vwport/4-docu.png"
-              onerror="this.src='FILL'" alt="Documentation">
+              onerror="this.src='https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/5-project-thumbs/screenshots-ffox-vwport/4-docu.png'"
+              alt="Documentation">
           </div>
         </a>
       </div>
-
-      <h3>Currently Working on:</h3>
-      <h4>JavaScript</h4>
-      <p>Google Grasshopper</p>
-      <p>FreeCodeCamp “JavaScript Algorithms and Data Structures”</p>
-      <p>Codewars Katas 8-5</p>
-
-      <h3>Next up:</h3>
-      <p>Bootstrap</p>
-      <p>Libraries</p>
-      <p>APIs</p>
-
+    </section>
+    <!--Progress-->
+    <section id="progress">
+      <div class="progress-child">
+        <h3>Currently Working on:</h3>
+        <h4>JavaScript</h4>
+        <ul>
+          <li>Google Grasshopper</li>
+          <li>FreeCodeCamp “JavaScript Algorithms and Data Structures”</li>
+          <li>Codewars Katas 8-5</li>
+        </ul>
+      </div>
+      <div class="progress-child">
+        <h3>Next up:</h3>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Libraries</li>
+          <li>APIs</li>
+        </ul>
+      </div>
     </section>
 
     <!--Contact-->
@@ -103,17 +118,20 @@
       <h3>Let's connect!</h3>
       <p>I really appreciate your comments and advice on where to go next, so that I can continue to improve every day!
       </p>
-      <div class="project-container">
+      <div class="contact-container">
         <a id="profile-link" href="https://github.com/0bubbles0" target="_blank"><i class="fa fa-github"></i>GitHub</a>
-        <a href="https://codepen.io/0Bubbles0" target="_blank"><i class="fa fa-codepen"></i>Codepen</a>
-        <a href="https://repl.it/@0bubbles01" target="_blank"><i class="fa fa-pencil-square-o"></i>Repl.it</a>
+        <a id="link-codepen" href="https://codepen.io/0Bubbles0" target="_blank"><i
+            class="fa fa-codepen"></i>Codepen</a>
+        <a id="link-repl" href="https://repl.it/@0bubbles01" target="_blank"><i
+            class="fa fa-pencil-square-o"></i>Repl.it</a>
 
-        <a href="https://www.freecodecamp.org/0bubbles0" target="_blank"><i class="fa fa-free-code-camp"></i>FCC</a>
-        <a href="https://www.codewars.com/users/0bubbles0" target="_blank"><i
+        <a id="link-fcc" href="https://www.freecodecamp.org/0bubbles0" target="_blank"><i
+            class="fa fa-free-code-camp"></i>FCC</a>
+        <a id="link-codewars" href="https://www.codewars.com/users/0bubbles0" target="_blank"><i
             class="fa fa-share-square"></i>Codewars</a>
 
-        <a href="mailto:example@example.com"><i class="fa fa-envelope"></i>Email</a>
-        <a href="…" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a>
+        <a id="link-email" href="mailto:example@example.com"><i class="fa fa-envelope"></i>Email</a>
+        <a id="link-linkedin" href="…" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a>
       </div>
     </section>
 

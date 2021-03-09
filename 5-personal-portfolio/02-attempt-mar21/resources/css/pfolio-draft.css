@@ -5,13 +5,16 @@
 :root{ 
   --font-color:#023047ff;
   --dominant-color: #ffb703ff;
-  --bground-color: #8ecae6ff;
-  --hover-color:#219ebcff;
+  /*  --bground-color: #8ecae6ff;*/
+  --bground-color: #cef6ff;
+/*  --hover-color:#219ebcff;*/
+--hover-color: #f9f871;
 }
 
 * {
   font-family:"Roboto", Helvetica, sans-serif;
   color: var(--font-color);
+  line-height:2.5;
   box-sizing: border-box;
   border-radius:;
 }
@@ -46,9 +49,9 @@ section {
 /*main {width: 100;}*/
 
 /*Color*/
-#navbar {  background-color: var(--dominant-color);}
-#contact, .project-tile { background-color: var(--bground-color);}
-#projects, footer {background-color: var(--hover-color);}
+#navbar, .nav-link-container {  background-color: var(--dominant-color);}
+.project-tile, #progress, footer { background-color: var(--bground-color);}
+#projects, #contact {background-color: var(--hover-color);}
 #welcome-section {
   background: /*var(--bground-color) url("https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/bordure-left-nav.png") no-repeat scroll left bottom, */ var(--bground-color) url("https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/bordure-right-nav.png") no-repeat scroll right bottom;
   background-size:contain;
@@ -56,14 +59,24 @@ section {
 
 /*Nav*/
 /*Nav logo & list flext*/
-
+#navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.nav-logo {
+  width: 180px;
+  height: auto;
+  margin-left: 1vw;
+/*  flex-shrink: 0;*/
+}
 /*nav list flex*/
 .nav-link-container {
   height: 10vh;
   margin: 0;
   
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
 }
@@ -76,7 +89,7 @@ nav li { list-style: none;}
   text-decoration: none;
 }
 .nav-link:hover {
-  background-color: var(--hover-color);
+  background-color: var(--bground-color);
   /*opacity, color*/
 }
 
@@ -138,8 +151,38 @@ h2, h3 {text-align: center;}
 }
 .card-style:hover {opacity: 0.8;}
 
+/*Progress*/
+#progress h3 {text-align:left; text-decoration:underline;}
+#progress > ul {font-size:1.4rem;}
+#progress {
+  display:flex; 
+  flex-flow: column wrap:
 
+}
+.progress-child {
+  flex: 1 1 50%;
+  padding: 2em;
+}
 
+/*Contact*/
+.contact-container {
+  margin: 10vh auto;
+  font-size:1.5rem;
+  display: grid;
+  grid-template: auto auto auto / auto auto auto;
+  grid-gap: 5vh 10vw;
+  justify-content: center;
+  align-content: center;
+}
+#profile-link { grid-area:1/2/span 1/ span 1;}
+#link-codepen { grid-area:2/1/span 1/ span 1;}
+#link-repl { grid-area:3/1/span 1/ span 1;}
+#link-fcc { grid-area:2/2/span 1/ span 1;}
+#link-codewars { grid-area:3/2/span 1/ span 1;}
+#link-email { grid-area:2/3/span 1/ span 1;}
+#link-linkedin { grid-area:3/3/span 1/ span 1;}
+
+i {padding-right: 6px;}
 
 /*OTHER*/
 main{}
@@ -176,7 +219,11 @@ footer {
 } */
 
 @media (max-width: 750px) {
+  .hide {display:none;}
   #welcome-section {background: var(--bground-color);}
+  .contact-container {display:flex; flex-flow: column nowrap;
+    font-size: 1.3rem;
+  }
 }
 
 
