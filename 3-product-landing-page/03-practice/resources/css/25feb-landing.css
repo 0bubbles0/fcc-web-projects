@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root{ 
+  --accent-color:#c13015;
+  --color-1:#2365a3;
+  --light-font: white;
+  --card-color:khaki;
+}
+
+* {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  border-radius:;
+}
+html {
+  font-size: 130%; /*or 62.5%? From now on use rem unit*/
+}
+
+
+/*HEADER appearance: position, style */
+header {
+  width: 100%;
+  /*height*/
+  border-bottom: 3px solid var(--accent-color);
+  /*position: fix; top:;*/
+}
+
+/*HEADER FLEX*/
+.header-flex-parent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-flex-child {}
+
+
+/*NAV*/
+/*NAV Layout*/
+.header-flex-child {background-color: green;}
+.nav-parent {
+  background-color: yellow;
+  display: grid;
+  grid-template: auto / repeat(6, auto); /*1fr or auto or 100px*/
+/*  padding: 0 0.4rem;*/
+ /* justify-items: center;
+  vertical-align: bottom;
+  align-items: end;*/
+}
+.nav-link { 
+  margin: 0.4rem;
+  /*padding: 0 0.4rem;*/
+  /*text-align: center;*/
+}
+.no-mobile {}
+.button {}
+
+@media only screen and (max-width: 700px) {
+  .no-mobile {display: none;}
+  .nav-parent {grid-template: auto / 1fr;}
+}
+
+/*NAV Style*/
+.nav-parent { list-style: none;}
+.nav-link a {  text-decoration: none;}
+.nav-link a:hover {}
+
+
+/*img*/
+.logo-frame {}
+.logo {}
+
+img {
+  max-width: 25vw;
+  height: auto;
+}
+
+/*Hilfsmarkierung*/
+* {
+  border: 1px dotted green;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--also select country? "en-US"-->
+
+<head>
+  <!--Character set, title-->
+  <meta charset="UTF-8">
+  <title>Form</title>
+
+  <!--META-->
+  <meta name="description" content="Web Page Project FCC">
+  <meta name="keywords" content="fcc, HTML, CSS, form">
+  <meta name="author" content="0bubbles0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="revised" content="0bubbles0, 16/02/2021">
+  <!--Auto-refresh: <meta http-equiv="refresh" content="60"> -->
+
+  <!--BASE URL that all relative URLs refer to: <base href="" target="_blank"> -->
+
+  <!--EXTERNAL RESOURCES-->
+  <link href="resources/css/form.css" type="text/css" rel="stylesheet">
+  <!--JavaScript: <script src="myscript.js"-->
+
+  <!--INTERNAL-->
+  <style></style>
+  <script></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <div class="full-container">
+    <header>
+      <!--logo, banner-->
+      <h1 id="title">Sign up to our Newsletters</h1>
+      <p id="description">Be the first to receive updates and enjoy exclusive offers from us!</p>
+      <!--<nav>Table of Contents:
+      <ul>
+        <li><a href="#C1">Chapter 1</a></li>
+        <li><a href="html-template-basics.html#C2">Recipes</a></li>
+      </ul>
+    </nav> -->
+    </header>
+
+    <!--MAIN-->
+    <form id="survey-form" class="form-container" name="sub-newsletters" autocomplete="on" target="_parent">
+      <!--  <p>Contact preferences:</p> -->
+      <!--NAME-->
+      <section class="section">
+        <label id="name-label" for="name" class="required">Name:</label>
+        <input id="name" type="text" class="block-items" name="name" placeholder="Full Name" required>
+      </section>
+
+      <!--EMAIL. validate-->
+      <section class="section">
+        <label id="email-label" for="email" class="required">Email:</label>
+        <input type="email" id="email" class="block-items" name="email" placeholder="Email Address" required>
+      </section>
+
+      <!--NUMBER. validate-->
+      <section class="section">
+        <label for="phone" class="optional">Mobile:</label>
+        <input id="phone" type="tel" class="block-items" name="phone" pattern="+44 7[0-9]{3} [0-9]{6}"
+          placeholder="+44 7 ...">
+      </section>
+
+      <section class="section">
+        <label id="number-label" for="number" class="optional">Age:</label>
+        <input type="number" id="number" class="block-items" name="age" min="16" max="130" placeholder="16+">
+      </section>
+
+      <!--DROPDOWN-->
+      <section class="section">
+        <label for="dropdown  " class="optional">How did you hear about us?</label>
+        <br>
+        <select id="referral" class="block-items" name="referral" size="1">
+          <option disabled selected value="0">Please select ...</option>
+          <option value="socialmedia">Social media</option>
+          <option value="advertisement">Advertisement</option>
+          <option value="recommendation">Personal Recommendation</option>
+          <option value="other">Other</option>
+        </select>
+      </section>
+      <!-- <br> -->
+
+      <!--CHECKBOXES-->
+      <fieldset class="section">
+        <legend class="required">Which Newsletters would you like to subscribe to?</legend>
+
+        <label class="block-items"><input id="sub-general" type="checkbox" name="subscriptions" value="general"
+            checked>General Updates and Announcements</label>
+
+        <label class="block-items"><input id="sub-new" type="checkbox" name="subscriptions" value="new">New in
+          Store</label>
+
+        <label class="block-items"><input id="sub-promos" type="checkbox" name="subscriptions"
+            value="promos">Promotional
+          Offers</label>
+
+        <label class="block-items"><input id="sub-members" type="checkbox" name="subscriptions"
+            value="members">Exclusive Member
+          Discounts</label>
+
+      </fieldset>
+      <!-- <br> -->
+
+      <!--CHECKBOXES-->
+      <fieldset class="section">
+        <legend class="required">How may we contact you?</legend>
+        <input id="allow-email" type="checkbox" name="allow" value="email" checked>
+        <label for="allow-email">Email</label>
+        <input id="allow-phone" type="checkbox" name="allow" value="phone">
+        <label for="allow-phone">SMS</label>
+      </fieldset>
+      <!-- <br> -->
+
+      <!--RADIO-->
+      <fieldset class="section">
+        <legend class="required">How often would you like to receive updates?</legend>
+        <input id="freq-daily" type="radio" name="frequency" value="daily" checked>
+        <label for="freq-daily">Daily</label>
+        <input id="freq-weekly" type="radio" name="frequency" value="weekly">
+        <label for="freq-weekly">Weekly</label>
+        <input id="freq-biweekly" type="radio" name="frequency" value="biweekly">
+        <label for="freq-biweekly">Biweekly</label>
+        <input id="freq-monthly" type="radio" name="frequency" value="monthly">
+        <label for="freq-monthly">Monthly</label>
+      </fieldset>
+      <!-- <br> -->
+
+      <!--COMMENTS-->
+      <section class="section">
+        <label for="comments">We value feedback from our Customers! <br><span class="hint">(Max 2000
+            characters)</span></label>
+        <br>
+        <textarea id="comments" class="block-items" name="message" rows="10" cols="30" maxlength="2000"
+          placeholder="Comments and suggestions..."></textarea>
+      </section>
+
+      <!--T&Cs-->
+      <section class="section">
+        <input id="t-c" type="checkbox" name="t-c" value="yes" required>
+        <label for="t-c" class="required">I accept the T&Cs and Privacy Policy.</label>
+      </section>
+
+      <!--SUBMIT-->
+      <section class="section">
+        <input type="submit" id="submit" class="button" value="Subscribe">
+      </section>
+
+    </form>
+    <!--<section>
+      <h3 id="C1">h2-h6 with default formats also for screenreaders, search engines</h2>
+        <p>Paragraph</p>
+    </section>-->
+  </div>
+
+  <!--FOOTER-->
+  <footer>
+    <hr>
+    <!--<details>
+      <summary>Heading connected to details element</summary>
+      <p>View or hide additional details</p>
+    </details>
+    <p>Footnotes, further reading, copyright information, sitemap, back-to-top. Multiple footers possible</p>-->
+    <p>(c) 2020-2021 0bubbles0</p>
+  </footer>
+
+</body>
+
+</html>

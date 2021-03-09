@@ -1,0 +1,213 @@
+/*IMPORT FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/*html is the root here, but :root as a class has higher specificity*/
+:root{ 
+  --font-color:#023047ff;
+  --dominant-color: #ffb703ff;
+  /*  --bground-color: #8ecae6ff;*/
+  --bground-color: #cef6ff;
+/*  --hover-color:#219ebcff;*/
+--hover-color: #f9f871;
+}
+
+* {
+  font-family:"Roboto", Helvetica, sans-serif;
+  color: var(--font-color);
+  line-height:2.5;
+  box-sizing: border-box;
+  border-radius:;
+}
+html {
+  font-size: 120%; /*or 62.5%? From now on use rem unit*/
+}
+
+/*Set global layout, spacing, color, font*/
+body{
+  margin:0;
+  background:;
+/*  background-color: var(--canvas-color); /*or set in html*/
+  /*font:family var(var(--font-color);*/
+  font-size:1.2rem;
+}
+
+/*Page Layout*/
+#navbar {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  margin: 1rem 0;
+  padding:11vh 2vw 2vh;
+}
+#welcome-section {
+/*  width: 100%;*/
+  height: 100vh;
+}
+/*main {width: 100;}*/
+
+/*Color*/
+#navbar, .nav-link-container {  background-color: var(--dominant-color);}
+.project-tile, #progress, footer { background-color: var(--bground-color);}
+#projects, #contact {background-color: var(--hover-color);}
+#welcome-section {
+  background: /*var(--bground-color) url("https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/bordure-left-nav.png") no-repeat scroll left bottom, */ var(--bground-color) url("https://raw.githubusercontent.com/0bubbles0/media/main/fcc-html/img/3-logo/bordure-right-nav.png") no-repeat scroll right bottom;
+  background-size:contain;
+}
+
+/*Nav*/
+/*Nav logo & list flext*/
+#navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.nav-logo {
+  width: 180px;
+  height: auto;
+  margin-left: 1vw;
+/*  flex-shrink: 0;*/
+}
+/*nav list flex*/
+.nav-link-container {
+  margin: 0;
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*nav list style*/
+nav li { list-style: none;}
+.nav-link { 
+  display: block; /*height,width equal li*/
+  padding: 1.3em;
+  text-decoration: none;
+}
+.nav-link:hover {
+  background-color: var(--font-color);
+  color: var(--dominant-color);
+  /*opacity, color*/
+}
+
+/*Welcome*/
+#welcome-section {line-height:2.5;}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h2, h3 {text-align: center; font-size: 2rem;}
+h4 {font-size: 1.6rem;}
+h3, h4 {margin: 0;}
+p {text-align:center;}
+#welcome-section > ul {
+  font-size: 1.7rem;
+  margin: auto;
+}
+.logo-welcome {
+  display:block;
+  max-width: 10%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*Projects*/
+/*Project Layout*/
+.project-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.project-tile {
+  display: block;
+  width: 22vw;
+  min-width: 250px;
+  /*  height: 40vh;*/
+  margin: 2em auto;
+  padding: 0.5em;
+}
+
+.project-tile-frame {}
+.project-tile-img {
+/*  height: 20vh;
+  width: 15vw;
+  object-fit: cover;*/
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*Project Design*/
+#projects > h3 {text-align: center;}
+.card-style {
+  text-decoration: none;
+  text-align:center;
+  background-color: var(--bground-color);
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);
+}
+.card-style:hover {opacity: 0.8;}
+
+/*Progress*/
+#progress h3 {text-align:left; /*text-decoration:underline;*/}
+#progress > ul {font-size:1.4rem;}
+#progress {
+  display:flex; 
+  flex-flow: row wrap;
+  padding:  2em;
+}
+.progress-child {
+  flex: 1 1 50%;
+}
+
+/*Contact*/
+.contact-container {
+  margin: 10vh auto;
+  font-size:1.5rem;
+  display: grid;
+  grid-template: auto auto auto / auto auto auto;
+  grid-gap: 5vh 10vw;
+  justify-content: center;
+  align-content: center;
+}
+#profile-link { grid-area:1/2/span 1/ span 1;}
+#link-codepen { grid-area:2/1/span 1/ span 1;}
+#link-repl { grid-area:3/1/span 1/ span 1;}
+#link-fcc { grid-area:2/2/span 1/ span 1;}
+#link-codewars { grid-area:3/2/span 1/ span 1;}
+#link-email { grid-area:2/3/span 1/ span 1;}
+#link-linkedin { grid-area:3/3/span 1/ span 1;}
+
+i {padding-right: 6px;}
+
+/*OTHER*/
+footer {
+  text-align: center;
+  border-top: 3px solid var(--dominant-color);
+  padding-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .hide {display:none;}
+  #welcome-section {
+    background: var(--bground-color); 
+    line-height:1.5;}
+  h1 {font-size:2rem;}
+  .contact-container {
+    display:flex; 
+    flex-flow: column nowrap;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+/*Hilfslinie*/
+/*.project-tile-frame {border: 1px solid green;} */

@@ -1,0 +1,180 @@
+/*IMPORT FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*html is the root here, but :root as a class has higher specificity*/
+:root{ 
+  --font-color:;
+  --bground-color:;
+  --canvas-color:;
+  --accent-color:#c13015;
+  --pale-color:;
+  --color-1:#2365a3;
+  --light-font: white;
+  --card-color:khaki;
+}
+
+* {
+  font-family:"Lato", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  border-radius:;
+}
+html {
+  font-size: 100%; /*or 62.5%? From now on use rem unit*/
+}
+
+/*Set global layout, spacing, color, font*/
+body{
+  margin:;
+  background:;
+  background-color: var(--canvas-color); /*or set in html*/
+  font:/*family var(var(--font-color);*/
+}
+
+/*GENERAL PAGE LAYOUT*/
+#header {}
+.page-container {
+  width: 100%;
+  /*max-width: 100ch;*/
+  margin: 0 auto;
+  padding: ;
+  background-color: var(--bground-color);
+  /*border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);*/
+}
+
+.knit-section {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+
+
+/*SPECIAL ELEMENTS*/
+h3 {}
+img {
+  /*this display and margin centers it in parent*/
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  width: 150px;
+}
+
+/*HEADER aligned sticky*/
+/*
+header {
+  top: 0;
+  display: flex;
+  align-items:flex-end;
+  padding: 0;
+  border-bottom: 5px solid var(--accent-color);
+}
+#header-img {
+  display: block;
+  margin: 0;
+  width: 150px;
+  height: auto;
+}
+/*NAV top pretty
+nav > ul {
+  align-self:flex-end;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: var(--accent-color);
+}
+.nav-item {
+  list-style: none;
+  margin: 1em;
+}
+.nav-item > a {
+  text-decoration: none;
+  color: var(--light-font);
+} 
+*/
+
+/*HEADER*/
+#header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 3px solid var(--accent-color);
+}
+.logo-frame {
+  width: 40vw;
+} 
+#header-img {
+  display: block;
+  margin: 0 3vw;
+  width: 150px;
+  height: auto;
+}
+/*NAV top pretty*/
+#nav-bar {
+/*justify-self:;*/
+  background-color: var(--accent-color);
+  padding: 1em;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--light-font);
+  padding: 1em;
+  margin: 1em;
+}
+.nav-link:hover, .nav-link:active {
+  background-color: var(--color-1);
+}
+
+
+/*FORM*/
+.form-container {
+  width: 100%; 
+  /*max-width: 720px;*/
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+.form {
+  width: 100%;
+  max-width: 47ch;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--card-color);
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);
+}
+.section {
+  width: 100%;
+  margin: 1rem 0;
+}
+.form-name {width: 49%; padding: 0.4rem;}
+.form-block {display:block; width: 100%; margin: 0.8rem 0; padding: 0.4rem;}
+.button {display: block;
+  /*width: 12ch;*/
+  margin: auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.2);
+  background-color: var(--accent-color);
+  color: var(--light-font);
+}
+.button:hover {
+  /* background-color: ; */
+  opacity: 0.8;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 6px 6px 6px rgba(0, 0, 0, 0.23);
+ }
+ select, input[type=checkbox], input[type=submit] {cursor: pointer;}
+
+/*FOOTER*/
+footer > p {
+  text-align: center;
+}
+
+hr { color: var(--accent-color);}

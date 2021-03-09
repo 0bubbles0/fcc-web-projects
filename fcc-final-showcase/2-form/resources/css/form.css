@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*html is the root here, but :root as a class has higher specificity*/
+:root{ 
+/*--font-color:#2c3531; */
+  --font-color: black;
+  --bground-color:#ffcb9a;
+/*--canvas-color:#d9b08c;*/
+  --canvas-color: #d1e8e2;
+  --accent-color:#116466;
+  --hint-color: rgb(10, 41, 41);
+  --input-color:rgb(9, 54, 23);
+/*--pale-color:#d1e8e2;*/ 
+  --pale-color:#d1e8e2;
+  --color-1:;
+}
+
+* {
+  font-family: "Lato", Helvetica, Arial, sans-serif;  
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+html {
+  font-size: 100%; /*or 62.5%? From now on use rem unit*/
+}
+
+/*DESIGN: COLORS*/
+body{
+  margin:;
+  background:;
+  background-color: var(--canvas-color); /*or set in html*/  
+}
+.full-container {
+  background-color: var(--bground-color); 
+  color: var(--font-color);}
+h1 {color: var(--accent-color);}
+.button {
+  background-color: var(--accent-color); 
+  color: var(--pale-color);}
+.optional:after, .hint, ::placeholder  {
+  color:var(--hint-color);
+  font-weight: 100;
+}  
+input, select, textarea {color:var(--input-color);}
+
+
+/*LAYOUT: Vertical*/
+.full-container {
+  width: 100%; 
+  /*max-width: 720px;*/
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color:khaki;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+/*Zeilenabstände*/
+.section {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.block-items {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+/*Decoration: Special effects*/
+.required:after {
+  color: red;
+  font-size:;
+  content: " *";
+}
+
+.optional:after {
+ /* color: grey; */
+  font-size:;
+  content:" (optional)";
+}
+
+.hint { 
+/*  color: grey; */
+  /*font-size:;*/
+}
+
+select, input[type=checkbox], input[type=radio], input[type=submit] {
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+  /*width: 12ch;*/
+  margin: auto;
+  padding: 1rem 2rem;
+  border: none;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.2);
+/*  background-color:;
+  font:;  */
+}
+.button:hover {
+ /* background-color: ; 
+  opacity:; lighter*/ 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.full-container {
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.2);
+ /* background-color:;*/
+}
