@@ -17,7 +17,7 @@
 - [x] Within the #header element I can see a nav element with a corresponding **id="nav-bar"**.
 - [x] I can see at least **three** clickable elements inside the nav element, each with the **class nav-link**.
 - [x] When I **click a .nav-link button** in the nav element, I am taken to the corresponding **section** of the landing page.
-- [ ] I can watch an embedded product video with **id="video"**.
+- [x] I can watch an embedded product video with **id="video"**.
 - [x] My landing page has a form element with a corresponding **id="form"**.
 - [x] Within the form, there is an input field with **id="email"** where I can enter an email address.
 - [x] The #email input field should have **placeholder** text to let the user know what the field is for.
