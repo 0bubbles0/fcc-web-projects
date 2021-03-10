@@ -5,6 +5,10 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"name": "media-1",
+			"path": "..\\09-github-public-url-media\\media-1"
 		}
 	],
 	"settings": {}
