@@ -101,9 +101,6 @@ header {
   height: 75vh;
 /*  height: auto;*/
 }
-iframe {
-  height: 315;
-}
 .hero-logo {
   max-width: 80%;
   height: auto;
