@@ -9,6 +9,10 @@
 		{
 			"name": "media-1",
 			"path": "..\\09-github-public-url-media\\media-1"
+		},
+		{
+			"name": "10-fac-coaching",
+			"path": "..\\10-fac-coaching"
 		}
 	],
 	"settings": {}
