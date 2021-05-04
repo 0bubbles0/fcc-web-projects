@@ -1,4 +1,5 @@
 # 3. Responsive Web Design Projects - Build a Product Landing Page
+
 ### TOOLS
 * You can use **HTML, JavaScript, and CSS** to complete this project.
 * Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS.
