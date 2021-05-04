@@ -13,6 +13,9 @@
 		{
 			"name": "10-fac-coaching",
 			"path": "..\\10-fac-coaching"
+		},
+		{
+			"path": "..\\..\\fac-22-application"
 		}
 	],
 	"settings": {}
